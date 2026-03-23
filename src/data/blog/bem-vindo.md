@@ -1,5 +1,5 @@
 ---
-author: Vinicius Souza
+author: Vinicius Costa
 pubDatetime: 2026-03-23T19:22:00Z
 title: "Bem-vindo ao meu Blog de IA"
 slug: bem-vindo-ao-meu-blog-de-ia

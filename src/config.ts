@@ -1,6 +1,6 @@
 export const SITE = {
   website: "https://viniciuscsouza.github.io/", // replace this with your deployed domain
-  author: "Vinicius Souza",
+  author: "Vinicius Costa",
   profile: "https://github.com/viniciuscsouza",
   desc: "Anotações sobre desenvolvimento de projetos com IA.",
   title: "AI Dev Notes",

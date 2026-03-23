@@ -17,7 +17,7 @@ Todo post `.md` deve começar com um bloco YAML como este:
 
 ```yaml
 ---
-author: Vinicius Souza
+author: Vinicius Costa
 pubDatetime: 2026-03-23T19:22:00Z
 title: "Título do Post"
 slug: titulo-do-post

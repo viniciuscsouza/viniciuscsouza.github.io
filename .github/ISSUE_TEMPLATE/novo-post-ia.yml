@@ -1,0 +1,93 @@
+name: "📝 Novo Post via Jules"
+description: "Solicitar que o Jules crie um post a partir de um artigo/publicação"
+title: "[AI Post] "
+labels: ["jules"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 🤖 Criação Automática de Post via Jules
+        Preencha os campos abaixo. O Jules vai ler esta issue, analisar o artigo e criar um PR com o post.
+
+  - type: input
+    id: source-url
+    attributes:
+      label: "🔗 Link do Artigo/Publicação"
+      description: "Cole aqui o link completo do artigo que deseja transformar em post."
+      placeholder: "https://exemplo.com/artigo-interessante"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: "📂 Categoria Principal"
+      description: "Selecione a categoria que melhor descreve o conteúdo."
+      options:
+        - inteligencia-artificial
+        - desenvolvimento-web
+        - devops
+        - cloud
+        - seguranca
+        - carreira
+        - ferramentas
+        - linguagens-programacao
+        - arquitetura-software
+        - dados
+        - mobile
+        - outro
+    validations:
+      required: true
+
+  - type: input
+    id: extra-tags
+    attributes:
+      label: "🏷️ Tags Adicionais (opcional)"
+      description: "Tags extras separadas por vírgula, além da categoria principal."
+      placeholder: "langchain, openai, agentes"
+    validations:
+      required: false
+
+  - type: dropdown
+    id: featured
+    attributes:
+      label: "⭐ Post em Destaque?"
+      description: "Marcar como post em destaque no blog."
+      options:
+        - "false"
+        - "true"
+      default: 0
+    validations:
+      required: false
+
+  - type: textarea
+    id: instructions
+    attributes:
+      label: "📋 Instruções Adicionais (opcional)"
+      description: "Alguma instrução específica para o Jules ao criar o post?"
+      placeholder: |
+        Ex: Focar nos exemplos práticos do artigo.
+        Ex: Incluir comparação com outras ferramentas.
+        Ex: Manter um tom mais técnico.
+    validations:
+      required: false
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+        ### 📌 Instruções para o Jules
+
+        Ao processar esta issue, siga as instruções do arquivo `GEMINI.md` na raiz do repositório.
+
+        **Resumo do que fazer:**
+        1. Acesse o link do artigo fornecido acima
+        2. Analise o conteúdo do artigo
+        3. Crie um novo arquivo `.md` em `src/data/blog/` seguindo o padrão do template `src/data/blog/_template.md`
+        4. O post deve ser escrito inteiramente em **PT-BR**
+        5. Gere um **título atrativo** em PT-BR
+        6. Gere **tags relevantes** (use a categoria selecionada como primeira tag)
+        7. Escreva o **conteúdo detalhado** — não apenas um resumo, mas uma análise aprofundada
+        8. No final do post, adicione a seção **"Fonte Original"** com o link do artigo
+        9. Execute `npm run build` para validar que o post foi criado corretamente
+        10. Crie o PR com as alterações

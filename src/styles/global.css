@@ -7,17 +7,17 @@
 html[data-theme="light"] {
   --background: #fbf1c7; /* Gruvbox Light bg0 */
   --foreground: #3c3836; /* Gruvbox Light fg1 */
-  --accent: #b57614;     /* Gruvbox Light yellow */
-  --muted: #ebdbb2;      /* Gruvbox Light bg1 */
-  --border: #d5c4a1;     /* Gruvbox Light bg2 */
+  --accent: #b57614; /* Gruvbox Light yellow */
+  --muted: #ebdbb2; /* Gruvbox Light bg1 */
+  --border: #d5c4a1; /* Gruvbox Light bg2 */
 }
 
 html[data-theme="dark"] {
   --background: #1d2021; /* Gruvbox Dark bg0_hard */
   --foreground: #ebdbb2; /* Gruvbox Dark fg1 */
-  --accent: #fabd2f;     /* Gruvbox Dark yellow */
-  --muted: #3c3835;      /* Gruvbox Dark bg1 */
-  --border: #504945;     /* Gruvbox Dark bg2 */
+  --accent: #fabd2f; /* Gruvbox Dark yellow */
+  --muted: #3c3835; /* Gruvbox Dark bg1 */
+  --border: #504945; /* Gruvbox Dark bg2 */
 }
 
 @theme inline {

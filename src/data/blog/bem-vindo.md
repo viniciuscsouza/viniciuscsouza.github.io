@@ -16,6 +16,7 @@ description: "Primeiro post do blog de anotações sobre desenvolvimento com IA.
 Este é o meu novo blog onde postarei anotações sobre desenvolvimento de projetos com Inteligência Artificial.
 
 Aqui você encontrará:
+
 - Reflexões sobre ferramentas
 - Prompts e técnicas
 - Experiências com agentes

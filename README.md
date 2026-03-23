@@ -33,6 +33,7 @@ Dentro do projeto, você verá as seguintes pastas e arquivos principais:
 Para testar o blog na sua máquina:
 
 1. **Instalar dependências:**
+
    ```bash
    npm install
    ```
@@ -47,12 +48,12 @@ Para testar o blog na sua máquina:
 
 ## 🧞 Comandos Úteis
 
-| Comando | Ação |
-| :--- | :--- |
-| `npm run dev` | Inicia o servidor local em `localhost:4321` |
-| `npm run build` | Compila o site estático para a pasta `./dist/` |
+| Comando           | Ação                                               |
+| :---------------- | :------------------------------------------------- |
+| `npm run dev`     | Inicia o servidor local em `localhost:4321`        |
+| `npm run build`   | Compila o site estático para a pasta `./dist/`     |
 | `npm run preview` | Pré-visualiza o build localmente antes de publicar |
-| `npm run format` | Corrige a formatação do código com Prettier |
+| `npm run format`  | Corrige a formatação do código com Prettier        |
 
 ---
 

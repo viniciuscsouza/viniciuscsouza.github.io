@@ -1,6 +1,6 @@
-# AI Dev Notes 📄
+# Engenharia de IA 📄
 
-Blog de anotações sobre desenvolvimento de projetos com Inteligência Artificial, construído com [Astro](https://astro.build/) e o tema [AstroPaper](https://github.com/satnaing/astro-paper).
+Blog sobre engenharia de IA: agentes, contexto, avaliação e o que se aprende depois que o sistema com LLM vai para o ar. Construído com [Astro](https://astro.build/) e o tema [AstroPaper](https://github.com/satnaing/astro-paper).
 
 ---
 

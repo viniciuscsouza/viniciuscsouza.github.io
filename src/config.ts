@@ -2,8 +2,8 @@ export const SITE = {
   website: "https://viniciuscsouza.github.io/", // replace this with your deployed domain
   author: "Vinicius Costa",
   profile: "https://github.com/viniciuscsouza",
-  desc: "Anotações sobre desenvolvimento de projetos com IA.",
-  title: "AI Dev Notes",
+  desc: "Caderno de campo sobre construir sistemas com LLM: agentes, contexto, avaliação e as lições que só aparecem quando o sistema vai para o ar.",
+  title: "Engenharia de IA",
   ogImage: "astropaper-og.jpg",
   lightAndDarkMode: true,
   postPerIndex: 4,

@@ -83,3 +83,107 @@ audio {
 html[data-theme="dark"] audio {
   color-scheme: dark;
 }
+
+/* Persona player: the engraving avatar is the play control.
+   Two quick taps play, a tap while playing stops, and the frame
+   pulses gently while the audio runs. */
+.persona {
+  margin: 2.5rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+  text-align: center;
+}
+
+.persona-avatar {
+  padding: 0;
+  border: 1px solid var(--border);
+  border-radius: 0.6rem;
+  background: var(--muted);
+  line-height: 0;
+  cursor: pointer;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.persona-avatar img {
+  display: block;
+  width: 9.5rem;
+  height: 9.5rem;
+  margin: 0;
+  border-radius: 0.55rem;
+  filter: grayscale(1) contrast(1.06);
+}
+
+.persona-avatar:hover {
+  transform: translateY(-2px);
+  border-color: var(--accent);
+}
+
+.persona-avatar:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+.persona-name {
+  margin: 0.5rem 0 0;
+  font-weight: 600;
+}
+
+.persona-hint {
+  margin: 0;
+  font-size: 0.78rem;
+  opacity: 0.75;
+}
+
+.persona-progress {
+  width: 9.5rem;
+  height: 2px;
+  margin-top: 0.4rem;
+  border-radius: 999px;
+  background: var(--border);
+  overflow: hidden;
+}
+
+.persona-progress span {
+  display: block;
+  width: 0;
+  height: 100%;
+  background: var(--accent);
+  transition: width 0.15s linear;
+}
+
+.persona.is-playing .persona-avatar {
+  border-color: var(--accent);
+  animation: persona-pulse 2.4s ease-in-out infinite;
+}
+
+.persona.is-playing .persona-hint {
+  opacity: 1;
+}
+
+@keyframes persona-pulse {
+  0%,
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 transparent;
+  }
+  50% {
+    transform: scale(1.035);
+    box-shadow: 0 0 0 6px color-mix(in srgb, var(--accent) 14%, transparent);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .persona.is-playing .persona-avatar {
+    animation: none;
+  }
+  .persona-avatar {
+    transition: none;
+  }
+}

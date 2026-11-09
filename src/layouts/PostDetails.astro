@@ -283,6 +283,103 @@ const nextPost =
   }
   attachCopyButtons();
 
+  /** Persona audio: the avatar is the control.
+   *  Double tap (or two quick clicks) plays; a tap while playing stops.
+   *  Keyboard (detail === 0) toggles with a single activation. */
+  function attachPersonaPlayers() {
+    const players = Array.from(document.querySelectorAll(".persona"));
+    if (players.length === 0) return;
+
+    const state = new WeakMap();
+    let lastTapAt = 0;
+    let lastTapPlayer = null;
+
+    function setup(player) {
+      let entry = state.get(player);
+      if (entry) return entry;
+
+      const audio = new Audio(player.dataset.audio);
+      audio.preload = "none";
+      const hint = player.querySelector(".persona-hint");
+      const bar = player.querySelector(".persona-progress span");
+      const button = player.querySelector(".persona-avatar");
+
+      entry = { audio, hint, bar, button, defaultHint: hint?.textContent ?? "" };
+      state.set(player, entry);
+
+      audio.addEventListener("timeupdate", () => {
+        if (bar && audio.duration) {
+          bar.style.width = `${(audio.currentTime / audio.duration) * 100}%`;
+        }
+      });
+      audio.addEventListener("ended", () => stopPlayer(player));
+      audio.addEventListener("pause", () => {
+        if (audio.currentTime === 0) stopPlayer(player);
+      });
+      return entry;
+    }
+
+    function stopPlayer(player) {
+      const entry = state.get(player);
+      if (!entry) return;
+      entry.audio.pause();
+      entry.audio.currentTime = 0;
+      player.classList.remove("is-playing");
+      entry.button.setAttribute("aria-pressed", "false");
+      if (entry.hint) entry.hint.textContent = entry.defaultHint;
+      if (entry.bar) entry.bar.style.width = "0%";
+    }
+
+    function stopAll(except) {
+      for (const player of players) {
+        if (player !== except) stopPlayer(player);
+      }
+    }
+
+    function playPlayer(player) {
+      const entry = setup(player);
+      stopAll(player);
+      entry.audio.play().catch(() => stopPlayer(player));
+      player.classList.add("is-playing");
+      entry.button.setAttribute("aria-pressed", "true");
+      if (entry.hint) entry.hint.textContent = "Tocando. Toque para parar.";
+    }
+
+    for (const player of players) {
+      const button = player.querySelector(".persona-avatar");
+      if (!button) continue;
+
+      button.addEventListener("click", event => {
+        const entry = setup(player);
+
+        // Keyboard activation has detail === 0 and toggles directly.
+        if (event.detail === 0) {
+          if (entry.audio.paused) playPlayer(player);
+          else stopPlayer(player);
+          return;
+        }
+
+        if (!entry.audio.paused) {
+          stopPlayer(player);
+          lastTapAt = 0;
+          lastTapPlayer = null;
+          return;
+        }
+
+        const now = Date.now();
+        if (lastTapPlayer === player && now - lastTapAt < 450) {
+          playPlayer(player);
+          lastTapAt = 0;
+          lastTapPlayer = null;
+        } else {
+          lastTapAt = now;
+          lastTapPlayer = player;
+        }
+      });
+    }
+  }
+  attachPersonaPlayers();
+
   /* Go to page start after page swap */
   document.addEventListener("astro:after-swap", () =>
     window.scrollTo({ left: 0, top: 0, behavior: "instant" })

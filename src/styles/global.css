@@ -68,3 +68,18 @@ html[data-theme="dark"] {
 :target {
   scroll-margin-block: 1rem;
 }
+
+/* Post audio commentary: full width, follows the active theme so the
+   native controls do not stay white in dark mode. */
+figure:has(audio) {
+  margin-block: 2rem;
+}
+
+audio {
+  width: 100%;
+  color-scheme: light;
+}
+
+html[data-theme="dark"] audio {
+  color-scheme: dark;
+}

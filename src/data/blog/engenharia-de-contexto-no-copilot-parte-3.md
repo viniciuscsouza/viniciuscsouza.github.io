@@ -14,6 +14,18 @@ tags:
 description: "Explore as melhores práticas de gerenciamento de contexto, evite antipadrões e aprenda como escalar a engenharia de contexto para grandes equipes e projetos."
 ---
 
+
+<div class="persona" data-audio="/audio/engenharia-de-contexto-no-copilot-parte-3-comentario.mp3">
+  <button class="persona-avatar" type="button" aria-pressed="false" aria-label="Tocar o comentário em áudio com Nadine">
+    <img src="/personas/nadine.webp" alt="Retrato de Nadine, em estilo de gravura" width="480" height="480" loading="lazy" />
+  </button>
+  <p class="persona-name">Nadine</p>
+  <p class="persona-hint">Toque duas vezes para ouvir</p>
+  <div class="persona-progress" aria-hidden="true"><span></span></div>
+</div>
+
+<p class="persona-note"><small>Comentário em áudio, 1 min 34: por que boas práticas de escala envelhecem e qual é a única métrica que eu levaria a sério. Não é a narração do texto.</small></p>
+
 Concluímos nossa jornada pela engenharia de contexto no Copilot explorando como manter esse sistema sustentável e eficaz a longo prazo. Depois de estruturar o conhecimento ([Parte 1](./engenharia-de-contexto-no-copilot-parte-1)) e orquestrar o planejamento e a implementação ([Parte 2](./engenharia-de-contexto-no-copilot-parte-2)), precisamos garantir que esse fluxo de trabalho escale com o seu projeto.
 
 ## Melhores Práticas e Padrões Comuns

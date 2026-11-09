@@ -13,6 +13,18 @@ tags:
 description: "Uma leitura comentada do guia de Hamel Husain sobre modelos de decisão em evals: por que o limiar 0,50 sabota o resultado, como calibrar as probabilidades e onde a conta fecha."
 ---
 
+
+<div class="persona" data-audio="/audio/modelos-de-decisao-em-evals-comentario.mp3">
+  <button class="persona-avatar" type="button" aria-pressed="false" aria-label="Tocar o comentário em áudio com Vicente">
+    <img src="/personas/vicente.webp" alt="Retrato de Vicente, em estilo de gravura" width="480" height="480" loading="lazy" />
+  </button>
+  <p class="persona-name">Vicente</p>
+  <p class="persona-hint">Toque duas vezes para ouvir</p>
+  <div class="persona-progress" aria-hidden="true"><span></span></div>
+</div>
+
+<p class="persona-note"><small>Comentário em áudio, 1 min 51: limiar como política, calibração só quando vira ação e o tamanho da amostra. Não é a narração do texto.</small></p>
+
 ## Sumário Executivo
 
 Saiu uma classe nova de modelo, os **modelos de decisão**: Jev (TypeSafe), Decider (Perplexity), d1 (Liquid), Clef (Cloudflare) e Decisions (OpenAI). Eles não conversam. Recebem uma pergunta fechada e devolvem a probabilidade de cada resposta. Para eval binário, isso é tudo que você precisa, e custa uma fração de um LLM judge.

@@ -13,6 +13,18 @@ description: "Exploração de como o Git é uma ferramenta essencial para trabal
 canonicalURL: "https://simonwillison.net/guides/agentic-engineering-patterns/using-git-with-coding-agents/"
 ---
 
+
+<div class="persona" data-audio="/audio/usando-git-com-coding-agent-comentario.mp3">
+  <button class="persona-avatar" type="button" aria-pressed="false" aria-label="Tocar o comentário em áudio com Caio">
+    <img src="/personas/caio.webp" alt="Retrato de Caio, em estilo de gravura" width="480" height="480" loading="lazy" />
+  </button>
+  <p class="persona-name">Caio</p>
+  <p class="persona-hint">Toque duas vezes para ouvir</p>
+  <div class="persona-progress" aria-hidden="true"><span></span></div>
+</div>
+
+<p class="persona-note"><small>Comentário em áudio, 1 min 35: o Git como rede de segurança do agente e os três hábitos que valem copiar hoje. Não é a narração do texto.</small></p>
+
 O Git é uma ferramenta fundamental para trabalhar com agentes de codificação. Manter o código em controle de versão nos permite registrar como ele muda ao longo do tempo, além de investigar e reverter quaisquer erros. Todos os agentes de codificação modernos são fluentes no uso dos recursos do Git, tanto básicos quanto avançados.
 
 Essa fluência significa que podemos ser mais ambiciosos sobre como usamos o Git. Não precisamos memorizar todos os comandos, mas estar cientes do que é possível nos permite aproveitar todo o potencial das habilidades do Git.

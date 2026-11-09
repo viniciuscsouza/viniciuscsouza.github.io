@@ -13,6 +13,18 @@ tags:
 description: "Uma introdução à engenharia de contexto no VS Code Copilot e como estruturar o contexto inicial do projeto usando arquivos de documentação e instruções customizadas."
 ---
 
+
+<div class="persona" data-audio="/audio/engenharia-de-contexto-no-copilot-parte-1-comentario.mp3">
+  <button class="persona-avatar" type="button" aria-pressed="false" aria-label="Tocar o comentário em áudio com Bruna">
+    <img src="/personas/bruna.webp" alt="Retrato de Bruna, em estilo de gravura" width="480" height="480" loading="lazy" />
+  </button>
+  <p class="persona-name">Bruna</p>
+  <p class="persona-hint">Toque duas vezes para ouvir</p>
+  <div class="persona-progress" aria-hidden="true"><span></span></div>
+</div>
+
+<p class="persona-note"><small>Comentário em áudio, 1 min 33: por que contexto virou orçamento e o teste cruel para saber se sua documentação serve para algo. Não é a narração do texto.</small></p>
+
 A engenharia de contexto é uma das habilidades mais críticas para desenvolvedores que utilizam ferramentas de IA como o GitHub Copilot no VS Code. Não se trata apenas de escrever um bom prompt isolado, mas de estabelecer uma base sólida de conhecimento que permita à IA entender não apenas *como* codificar, mas *o que* e *por que* ela está construindo algo dentro do ecossistema do seu projeto.
 
 Nesta primeira parte de nossa série sobre Engenharia de Contexto, vamos explorar os fundamentos desta abordagem e como configurar a curadoria inicial do seu projeto.

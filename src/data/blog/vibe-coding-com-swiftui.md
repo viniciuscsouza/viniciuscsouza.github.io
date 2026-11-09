@@ -13,6 +13,18 @@ tags:
 description: "Exploração de como Simon Willison utilizou Claude e GPT-5 para criar aplicativos macOS funcionais em SwiftUI através do conceito de Vibe Coding."
 ---
 
+
+<div class="persona" data-audio="/audio/vibe-coding-com-swiftui-comentario.mp3">
+  <button class="persona-avatar" type="button" aria-pressed="false" aria-label="Tocar o comentário em áudio com Sabrina">
+    <img src="/personas/sabrina.webp" alt="Retrato de Sabrina, em estilo de gravura" width="480" height="480" loading="lazy" />
+  </button>
+  <p class="persona-name">Sabrina</p>
+  <p class="persona-hint">Toque duas vezes para ouvir</p>
+  <div class="persona-progress" aria-hidden="true"><span></span></div>
+</div>
+
+<p class="persona-note"><small>Comentário em áudio, 1 min 26: por que o arquivo único é o herói do texto e o teste honesto de qualquer app feito no impulso. Não é a narração do texto.</small></p>
+
 ## Sumário Executivo
 
 O conceito de "Vibe Coding" — onde o desenvolvedor foca na intenção e no resultado visual/funcional através de prompts, deixando a implementação técnica pesada para a IA — ganhou um novo capítulo com o relato de Simon Willison. Utilizando modelos avançados como Claude 4.6 e GPT-5.4, ele demonstrou que é possível construir aplicativos macOS nativos e funcionais em SwiftUI sem sequer abrir o Xcode ou possuir conhecimento profundo da linguagem Swift. Este post detalha como ele criou ferramentas de monitoramento de sistema (`Bandwidther` e `Gpuer`) e o que isso significa para o futuro do desenvolvimento de software.

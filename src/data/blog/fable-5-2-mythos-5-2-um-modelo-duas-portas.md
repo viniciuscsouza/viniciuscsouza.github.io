@@ -13,10 +13,16 @@ tags:
 description: "A Anthropic lançou dois modelos que são o mesmo por baixo: Fable 5.2 para todo mundo, Mythos 5.2 só para organizações verificadas. O que mudou, o que os números dizem e onde eu desconfio."
 ---
 
-<figure>
-  <audio controls preload="metadata" src="/audio/fable-5-2-comentario.mp3" style="width:100%"></audio>
-  <figcaption>Comentário em áudio, 2 minutos e meio: o que o lançamento revela e onde eu desconfio dos números. Não é a narração do texto.</figcaption>
-</figure>
+<div class="persona" data-audio="/audio/fable-5-2-comentario.mp3">
+  <button class="persona-avatar" type="button" aria-pressed="false" aria-label="Tocar o comentário em áudio com Nadine">
+    <img src="/personas/nadine.webp" alt="Retrato de Nadine, em estilo de gravura" width="480" height="480" loading="lazy" />
+  </button>
+  <p class="persona-name">Nadine</p>
+  <p class="persona-hint">Toque duas vezes para ouvir</p>
+  <div class="persona-progress" aria-hidden="true"><span></span></div>
+</div>
+
+<p class="persona-note"><small>Comentário em áudio, 2 minutos e meio: o que o lançamento revela e onde eu desconfio dos números. Não é a narração do texto.</small></p>
 
 ## Sumário Executivo
 

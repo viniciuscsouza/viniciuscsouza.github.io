@@ -1,6 +1,6 @@
 ---
 author: Vinicius Costa
-pubDatetime: 2026-11-09T22:00:00Z
+pubDatetime: 2026-11-09T12:00:00Z
 title: "Self-harness: quando o próprio agente melhora o harness"
 slug: self-harness-quando-o-proprio-agente-melhora-o-harness
 featured: false

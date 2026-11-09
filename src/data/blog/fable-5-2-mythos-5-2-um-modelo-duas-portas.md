@@ -15,7 +15,7 @@ description: "A Anthropic lançou dois modelos que são o mesmo por baixo: Fable
 
 <figure>
   <audio controls preload="metadata" src="/audio/fable-5-2-comentario.mp3" style="width:100%"></audio>
-  <figcaption>Comentário em áudio, 2 minutos e meio: o que o lançamento revela e onde eu desconfio dos números. Não é a narração do texto.</figcaption>
+  <figcaption>Comentário em áudio com Nadine, 2 minutos e meio: o que o lançamento revela e onde eu desconfio dos números. Não é a narração do texto.</figcaption>
 </figure>
 
 ## Sumário Executivo

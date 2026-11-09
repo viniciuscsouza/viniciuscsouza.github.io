@@ -304,7 +304,13 @@ const nextPost =
       const bar = player.querySelector(".persona-progress span");
       const button = player.querySelector(".persona-avatar");
 
-      entry = { audio, hint, bar, button, defaultHint: hint?.textContent ?? "" };
+      entry = {
+        audio,
+        hint,
+        bar,
+        button,
+        defaultHint: hint?.textContent ?? "",
+      };
       state.set(player, entry);
 
       audio.addEventListener("timeupdate", () => {

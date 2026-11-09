@@ -1,6 +1,7 @@
 import { defineConfig, envField, fontProviders } from "astro/config";
 import tailwindcss from "@tailwindcss/vite";
 import sitemap from "@astrojs/sitemap";
+import mermaid from "astro-mermaid";
 import remarkToc from "remark-toc";
 import remarkCollapse from "remark-collapse";
 import {
@@ -17,6 +18,11 @@ export default defineConfig({
   integrations: [
     sitemap({
       filter: page => SITE.showArchives || !page.endsWith("/archives"),
+    }),
+    mermaid({
+      theme: "default",
+      autoTheme: true,
+      enableLog: false,
     }),
   ],
   markdown: {

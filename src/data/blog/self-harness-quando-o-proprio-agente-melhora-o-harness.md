@@ -23,17 +23,39 @@ O experimento cobre nove combinações de três modelos e três benchmarks. Toda
 
 Dois agentes com o mesmo modelo e o mesmo orçamento podem ter desempenhos muito diferentes. A diferença mora na camada que não é peso: instruções de etapa, ferramentas disponíveis, memória, checagens antes de concluir, limite de chamadas, orquestração de subagentes.
 
+```mermaid
+flowchart LR
+    T["Tarefa"] --> H
+    subgraph H["Harness"]
+        direction TB
+        I["Instruções"]
+        F["Ferramentas"]
+        M["Memória"]
+        V["Verificação"]
+        P["Política de execução"]
+    end
+    H --> E["Ambiente: arquivos, shell, APIs"]
+    E --> T
+    N["Modelo: pesos congelados"] -.-> H
+```
+
 O paper insiste nesse ponto. Muitas falhas importantes de agente não são falhas do modelo, são falhas da camada de fora. O agente diz que concluiu sem conferir o arquivo que precisava entregar. Repete o comando que já falhou. Perde o fio da meada no meio de um contexto longo. Nada disso se resolve escrevendo um prompt mais bonito.
 
 O problema é que essa camada é escrita à mão, e cada modelo tem tiques próprios. Um explora demais antes de agir. Outro instala dependência e perde a configuração entre comandos de shell. Com modelos novos saindo toda hora, reajustar o harness para cada um não escala.
 
 ## O laço em três etapas
 
-```
-avaliar h_t  -->  minerar falhas  -->  propor K edições  -->  validar nos 2 splits
-     ^                                                            |
-     |             aceita só se não piorar nenhum dos dois        |
-     +----------------------- h_(t+1) <---------------------------+
+```mermaid
+flowchart TD
+    A["Rodada t: harness h_t"] --> B["Avaliar nos dois conjuntos"]
+    B --> C["Minerar falhas por assinatura"]
+    C --> D["Propor K edições mínimas"]
+    D --> E["Validar cada candidato"]
+    E --> F{"Melhorou um e não piorou o outro?"}
+    F -->|"sim"| G["Aceitar, mesclar, virar h_(t+1)"]
+    F -->|"não"| H["Rejeitar e registrar no histórico"]
+    G --> A
+    H --> A
 ```
 
 A mineração é a parte que merece atenção. Em vez de jogar os logs no modelo e perguntar o que está errado, o sistema agrupa as falhas por uma assinatura de três campos: a causa terminal que o verificador apontou, o status causal do comportamento do agente dentro do trace e o mecanismo abstrato que aquele trace expõe. Duas falhas só caem no mesmo grupo quando concordam nos três. O agrupamento é determinístico, não é similaridade semântica.
@@ -47,6 +69,16 @@ A validação é onde o método ganha disciplina. Cada candidato é avaliado nos
 ## Held-in e held-out: a diferença entre melhorar e decorar
 
 Pense na lista de exercícios e na prova. Se o aluno vai bem só na lista, você não sabe se ele aprendeu ou memorizou. O held-in é a lista: as falhas dele alimentam a proposta. O held-out é a prova: o agente nunca vê essas tarefas, elas servem apenas de portão contra regressão.
+
+```mermaid
+flowchart LR
+    D["Tarefas do benchmark"] --> IN["Held-in<br/>as falhas viram evidência"]
+    D --> HO["Held-out<br/>nunca mostrado ao agente"]
+    IN --> P["Proposta de edição"]
+    HO --> G["Portão de não-regressão"]
+    P --> C["Harness candidato"]
+    G --> C
+```
 
 O harness não guarda respostas, mas pode decorar particularidades do ambiente. Onde fica o arquivo de resposta, qual é o nome do teste, em que porta o serviço sobe. Uma edição dessas sobe o held-in e não serve para nada fora do benchmark. O held-out é o filtro que separa uma coisa da outra.
 

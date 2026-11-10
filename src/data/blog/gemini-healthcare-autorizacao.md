@@ -25,8 +25,6 @@ description: "O Google Cloud lançou o Gemini for healthcare em preview nos EUA:
 
 <p class="persona-note"><small>Comentário em áudio, 2 min 16: Vicente separa montar a evidência de decidir a cobertura — e cobra regime de mudança para a skill. Não é a narração do texto.</small></p>
 
-# A autorização prévia ganhou um agente dos dois lados da mesa
-
 O anúncio do Gemini for healthcare, publicado em 10 de novembro pelo Google Cloud, descreve o mesmo produto duas vezes, para dois públicos que normalmente se enfrentam. Para provedores: "authorization packets are assembled against payer policy before submission, so fewer claims come back denied" (tradução minha: os pacotes de autorização são montados contra a política do pagador antes do envio, para que voltem menos pedidos negados). Para planos de saúde e pagadores: "Checks incoming requests against the health plan's medical policies and organizes the findings for reviewers" (confere os pedidos recebidos contra as políticas médicas do plano e organiza os achados para os revisores).
 
 O primeiro fluxo não para na montagem do pacote. O texto continua: "If denials do occur, and the record supports it, it drafts an appeal grounded directly in the clinical record and the plan's policy" (se houver negativa, e o prontuário sustentar, redige um recurso fundamentado diretamente no prontuário clínico e na política do plano). O mesmo documento de política que o provedor tenta satisfazer é o que o agente do plano usa para conferir. Separo o que é do anúncio e o que é meu: o anúncio descreve dois fluxos; a observação de que eles se encontram na mesma política é minha.

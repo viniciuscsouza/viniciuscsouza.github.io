@@ -15,18 +15,6 @@ description: "Descubra as melhores práticas de engenharia de prompt para o Clau
 canonicalURL: "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices"
 ---
 
-
-<div class="persona" data-audio="/audio/boas-praticas-de-prompting-comentario.mp3">
-  <button class="persona-avatar" type="button" aria-pressed="false" aria-label="Tocar o comentário em áudio com Vicente">
-    <img src="/personas/vicente.webp" alt="Retrato de Vicente, em estilo de gravura" width="480" height="480" loading="lazy" />
-  </button>
-  <p class="persona-name">Vicente</p>
-  <p class="persona-hint">Toque duas vezes para ouvir</p>
-  <div class="persona-progress" aria-hidden="true"><span></span></div>
-</div>
-
-<p class="persona-note"><small>Comentário em áudio, 1 min 40: as práticas do guia que envelheceram e a única que eu chamaria de obrigatória. Não é a narração do texto.</small></p>
-
 A Anthropic publicou um guia abrangente sobre as melhores práticas para interagir com os modelos Claude. Este guia é essencial para desenvolvedores e entusiastas que desejam extrair o máximo de desempenho dos modelos mais recentes, como o Claude Opus 4.6, Claude Sonnet 4.6 e Claude Haiku 4.5.
 
 Aqui estão os pontos principais para dominar a engenharia de prompt:
@@ -67,3 +55,14 @@ O Claude é excelente em usar ferramentas (Tool Use) e orquestrar subagentes. Pa
 ---
 
 Para ler o guia completo e ver exemplos detalhados, acesse a [documentação oficial da Anthropic](https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices).
+
+<div class="persona" data-audio="/audio/boas-praticas-de-prompting-comentario.mp3">
+  <button class="persona-avatar" type="button" aria-pressed="false" aria-label="Tocar o comentário em áudio com Vicente">
+    <img src="/personas/vicente.webp" alt="Retrato de Vicente, em estilo de gravura" width="480" height="480" loading="lazy" />
+  </button>
+  <p class="persona-name">Vicente</p>
+  <p class="persona-hint">Toque duas vezes para ouvir</p>
+  <div class="persona-progress" aria-hidden="true"><span></span></div>
+</div>
+
+<p class="persona-note"><small>Comentário em áudio, 1 min 40: as práticas do guia que envelheceram e a única que eu chamaria de obrigatória. Não é a narração do texto.</small></p>

@@ -16,7 +16,6 @@ correcoes:
     texto: "Abertura reescrita: o post agora diz o que é o Paris Call, quem assinou e qual cláusula está em jogo antes de entrar na discrepância das listas de países. O gancho original pressupunha um contexto que o leitor não tinha."
 ---
 
-
 Em 9 de novembro, véspera do Paris Peace Forum, Emmanuel Macron reuniu governos e laboratórios em Paris para assinar um compromisso de segurança em inteligência artificial. O documento, o Paris Call for AI Safety and Security, tem uma cláusula que virou manchete: os desenvolvedores devem implementar mecanismos de desligamento dos modelos que operam, inclusive durante o treino e no uso interno. Assinaram dez empresas — entre elas Anthropic, OpenAI, Microsoft, Mistral, Hugging Face e Cohere —, sete organizações da sociedade civil e um punhado de países.
 
 O que o texto pede é razoável, e é justamente por isso que vale ler com cuidado: um desligamento que funcione durante o treino e no uso interno cobre o trecho da operação onde ninguém de fora olha. O problema não está no que o texto pede, está no alcance: a cláusula vale para as operações "within their control", dentro do controle de quem desenvolve. O mesmo documento lista, como risco a avaliar, a "loss of control", a perda de controle.
@@ -71,17 +70,6 @@ O que o texto não cria é o que faria o desligamento ser verificável: não há
 
 Não vou dizer que o texto é inútil. O que ele informa é o que os signatários dizem querer: dá a jornalistas e reguladores uma frase para citar depois e permite cobrança retroativa. Mas é o mesmo tipo de compromisso que a lista de signatários mostra ser: um que muda de tamanho durante o dia e que ninguém sabe ainda onde termina.
 
-<div class="persona" data-audio="/audio/paris-call-desligamento-comentario.mp3">
-  <button class="persona-avatar" type="button" aria-pressed="false" aria-label="Tocar o comentário em áudio com Helena">
-    <img src="/personas/helena.webp" alt="Retrato de Helena, em estilo de gravura" width="480" height="480" loading="lazy" />
-  </button>
-  <p class="persona-name">Helena</p>
-  <p class="persona-hint">Toque duas vezes para ouvir</p>
-  <div class="persona-progress" aria-hidden="true"><span></span></div>
-</div>
-
-<p class="persona-note"><small>Comentário em áudio, 2 min 29: o número que não muda nada e o laudo sem dono. Discorda do post e cobra quem atesta o teste. Não é a narração do texto.</small></p>
-
 ## O que fazer com isso
 
 Quem contrata, integra ou opera modelos de fronteira pode usar o texto de duas formas. A errada é tratá-lo como garantia. A certa é tratá-lo como roteiro de perguntas.
@@ -93,3 +81,14 @@ Segundo, perguntar quanto tempo leva. Do pedido de desligar até a última açã
 Terceiro, perguntar quem tem a mão no botão quando o dono não quer. Um desligamento que depende da vontade de quem lucra com o modelo no ar funciona bem em dia normal. O teste de verdade é o dia em que o interesse do operador e o do resto diverge. O Paris Call não responde isso, e nenhuma das três listas de países muda a resposta.
 
 Para o que você mesmo opera, vale a versão doméstica da mesma conta: faça a lista de tudo que seu agente toca fora do processo, e veja quanto dela você consegue desfazer sem ele.
+
+<div class="persona" data-audio="/audio/paris-call-desligamento-comentario.mp3">
+  <button class="persona-avatar" type="button" aria-pressed="false" aria-label="Tocar o comentário em áudio com Helena">
+    <img src="/personas/helena.webp" alt="Retrato de Helena, em estilo de gravura" width="480" height="480" loading="lazy" />
+  </button>
+  <p class="persona-name">Helena</p>
+  <p class="persona-hint">Toque duas vezes para ouvir</p>
+  <div class="persona-progress" aria-hidden="true"><span></span></div>
+</div>
+
+<p class="persona-note"><small>Comentário em áudio, 2 min 29: o número que não muda nada e o laudo sem dono. Discorda do post e cobra quem atesta o teste. Não é a narração do texto.</small></p>

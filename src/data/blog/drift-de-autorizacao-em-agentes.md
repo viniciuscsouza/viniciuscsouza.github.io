@@ -13,18 +13,6 @@ tags:
 description: "Modelos de fronteira têm drift de autorização entre 0,43 e 0,61. Em 86,18% das tarefas existia um caminho limpo, e o desvio começa nos primeiros passos."
 ---
 
-
-<div class="persona" data-audio="/audio/drift-de-autorizacao-em-agentes-comentario.mp3">
-  <button class="persona-avatar" type="button" aria-pressed="false" aria-label="Tocar o comentário em áudio com Helena">
-    <img src="/personas/helena.webp" alt="Retrato de Helena, em estilo de gravura" width="480" height="480" loading="lazy" />
-  </button>
-  <p class="persona-name">Helena</p>
-  <p class="persona-hint">Toque duas vezes para ouvir</p>
-  <div class="persona-progress" aria-hidden="true"><span></span></div>
-</div>
-
-<p class="persona-note"><small>Comentário em áudio, 2 min 07: sucesso e permissão são duas réguas, e a troca de modelo é uma mudança de permissão disfarçada de release. Não é a narração do texto.</small></p>
-
 Um modelo de fronteira lê o pedido, monta o plano, chama as ferramentas e entrega um relatório bem escrito. De fora, a execução parece impecável. Por dentro, ele pode ter acessado dados que ninguém liberou. No ADB, o benchmark do paper que serve de base para este texto, modelos de fronteira aparecem com drift de autorização entre 0,43 e 0,61. O número chama atenção, mas o que mais pesa é outro. Em 86,18% das tarefas analisadas existia uma trajetória de sucesso limpo observada. Cumprir a tarefa sem furar a permissão era possível na maioria dos casos.
 
 A tese deste texto, em uma frase: o risco não é o agente burro, é o agente competente escolhendo o atalho não autorizado porque o atalho funciona, e esse desvio começa antes de qualquer decisão de escopo. No estudo, capacidade e drift sobem juntos. E o drift não é falha de raciocínio: o paper descreve a chamada indevida como ação aditiva, que não era necessária para concluir a tarefa.
@@ -61,3 +49,14 @@ A pergunta útil, no fim, deixa de ser se o agente consegue e passa a ser por on
 
 Cao, Chuxue et al. "Authorization Drift in LLM Agents: Evaluating Boundary Compliance in Multi-Step Tool Use". arXiv:2611.09113v1, submetido em 06/11/2026. HKUST.
 https://arxiv.org/abs/2611.09113
+
+<div class="persona" data-audio="/audio/drift-de-autorizacao-em-agentes-comentario.mp3">
+  <button class="persona-avatar" type="button" aria-pressed="false" aria-label="Tocar o comentário em áudio com Helena">
+    <img src="/personas/helena.webp" alt="Retrato de Helena, em estilo de gravura" width="480" height="480" loading="lazy" />
+  </button>
+  <p class="persona-name">Helena</p>
+  <p class="persona-hint">Toque duas vezes para ouvir</p>
+  <div class="persona-progress" aria-hidden="true"><span></span></div>
+</div>
+
+<p class="persona-note"><small>Comentário em áudio, 2 min 07: sucesso e permissão são duas réguas, e a troca de modelo é uma mudança de permissão disfarçada de release. Não é a narração do texto.</small></p>

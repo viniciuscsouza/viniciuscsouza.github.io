@@ -14,18 +14,6 @@ tags:
 description: "Conheça o TurboQuant, a nova técnica do Google que utiliza PolarQuant e QJL para compressão extrema de LLMs sem perda de precisão."
 ---
 
-
-<div class="persona" data-audio="/audio/turboquant-redefinindo-a-eficiencia-de-ia-com-compressao-extrema-comentario.mp3">
-  <button class="persona-avatar" type="button" aria-pressed="false" aria-label="Tocar o comentário em áudio com Helena">
-    <img src="/personas/helena.webp" alt="Retrato de Helena, em estilo de gravura" width="480" height="480" loading="lazy" />
-  </button>
-  <p class="persona-name">Helena</p>
-  <p class="persona-hint">Toque duas vezes para ouvir</p>
-  <div class="persona-progress" aria-hidden="true"><span></span></div>
-</div>
-
-<p class="persona-note"><small>Comentário em áudio, 1 min 25: o que neutralidade em benchmark esconde e por que o ganho alheio aos dados é o mais importante. Não é a narração do texto.</small></p>
-
 ## O Desafio da Escala em Modelos de Linguagem
 
 À medida que os Modelos de Linguagem de Grande Escala (LLMs) evoluem para lidar com contextos cada vez mais longos, um novo gargalo surge: o consumo de memória do **cache Key-Value (KV)**. Este componente atua como uma "memória de curto prazo" para o modelo, armazenando informações de tokens processados anteriormente para evitar reprocessamento caro.
@@ -74,3 +62,14 @@ Mais do que uma solução de engenharia, o TurboQuant oferece uma base teórica 
 ## 📎 Fonte Original
 
 > Este post foi baseado no artigo original: [TurboQuant: Redefining AI efficiency with extreme compression](https://research.google/blog/turboquant-redefining-ai-efficiency-with-extreme-compression/)
+
+<div class="persona" data-audio="/audio/turboquant-redefinindo-a-eficiencia-de-ia-com-compressao-extrema-comentario.mp3">
+  <button class="persona-avatar" type="button" aria-pressed="false" aria-label="Tocar o comentário em áudio com Helena">
+    <img src="/personas/helena.webp" alt="Retrato de Helena, em estilo de gravura" width="480" height="480" loading="lazy" />
+  </button>
+  <p class="persona-name">Helena</p>
+  <p class="persona-hint">Toque duas vezes para ouvir</p>
+  <div class="persona-progress" aria-hidden="true"><span></span></div>
+</div>
+
+<p class="persona-note"><small>Comentário em áudio, 1 min 25: o que neutralidade em benchmark esconde e por que o ganho alheio aos dados é o mais importante. Não é a narração do texto.</small></p>

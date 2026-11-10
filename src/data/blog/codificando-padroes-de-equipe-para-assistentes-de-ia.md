@@ -13,18 +13,6 @@ tags:
 description: "Transformando o conhecimento tácito de engenheiros sêniores em instruções executáveis para IAs, garantindo consistência e qualidade."
 ---
 
-
-<div class="persona" data-audio="/audio/codificando-padroes-de-equipe-para-assistentes-de-ia-comentario.mp3">
-  <button class="persona-avatar" type="button" aria-pressed="false" aria-label="Tocar o comentário em áudio com Vicente">
-    <img src="/personas/vicente.webp" alt="Retrato de Vicente, em estilo de gravura" width="480" height="480" loading="lazy" />
-  </button>
-  <p class="persona-name">Vicente</p>
-  <p class="persona-hint">Toque duas vezes para ouvir</p>
-  <div class="persona-progress" aria-hidden="true"><span></span></div>
-</div>
-
-<p class="persona-note"><small>Comentário em áudio, 1 min 38: por que o subproduto do padrão executável é a reunião e o risco de falha correlacionada. Não é a narração do texto.</small></p>
-
 ## Sumário Executivo
 
 O uso de assistentes de código baseados em IA trouxe um novo desafio para as equipes de desenvolvimento: a inconsistência. A qualidade do código gerado ou revisado por uma IA depende diretamente de quem está fazendo o prompt. Engenheiros experientes instintivamente incluem padrões de arquitetura, segurança e convenções da equipe em suas interações, enquanto desenvolvedores menos experientes podem receber resultados genéricos e desalinhados.
@@ -102,3 +90,14 @@ Para começar, Martin Fowler sugere:
 ## 📎 Fonte Original
 
 > Este post foi baseado no artigo original: [Encoding Team Standards - Martin Fowler](https://martinfowler.com/articles/reduce-friction-ai/encoding-team-standards.html)
+
+<div class="persona" data-audio="/audio/codificando-padroes-de-equipe-para-assistentes-de-ia-comentario.mp3">
+  <button class="persona-avatar" type="button" aria-pressed="false" aria-label="Tocar o comentário em áudio com Vicente">
+    <img src="/personas/vicente.webp" alt="Retrato de Vicente, em estilo de gravura" width="480" height="480" loading="lazy" />
+  </button>
+  <p class="persona-name">Vicente</p>
+  <p class="persona-hint">Toque duas vezes para ouvir</p>
+  <div class="persona-progress" aria-hidden="true"><span></span></div>
+</div>
+
+<p class="persona-note"><small>Comentário em áudio, 1 min 38: por que o subproduto do padrão executável é a reunião e o risco de falha correlacionada. Não é a narração do texto.</small></p>

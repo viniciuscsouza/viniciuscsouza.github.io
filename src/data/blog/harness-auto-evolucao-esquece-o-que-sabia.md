@@ -13,18 +13,6 @@ tags:
 description: "Um harness chegou a 94% no SWE-Bench e caiu a 32% na mesma tarefa depois de evoluir no FeatureBench. O placar de uma tarefa não mostra a conta."
 ---
 
-
-<div class="persona" data-audio="/audio/harness-auto-evolucao-esquece-o-que-sabia-comentario.mp3">
-  <button class="persona-avatar" type="button" aria-pressed="false" aria-label="Tocar o comentário em áudio com Caio">
-    <img src="/personas/caio.webp" alt="Retrato de Caio, em estilo de gravura" width="480" height="480" loading="lazy" />
-  </button>
-  <p class="persona-name">Caio</p>
-  <p class="persona-hint">Toque duas vezes para ouvir</p>
-  <div class="persona-progress" aria-hidden="true"><span></span></div>
-</div>
-
-<p class="persona-note"><small>Comentário em áudio, 2 min 04: o harness sem dono, a suíte que morre sozinha e o que eu faria na segunda. Não é a narração do texto.</small></p>
-
 Imagine um agente de código que, depois de alguns ciclos de ajuste automático, conserta bug do repositório com folga. Você acompanha o número, ele sobe, e a conclusão parece óbvia: o harness melhorou. Aí você pede para ele implementar uma feature nova. Ele faz, mas, no caminho, perde a mão para consertar bug. O mesmo agente que fechava correções sem drama agora trava na primeira falha de teste.
 
 Esse cenário é a versão de bolso do que um grupo da Tsinghua mediu no paper "Can Coding Agents Sustain Continual Evolution without Forgetting?" (arXiv 2611.03219). A pergunta do paper não é se um harness consegue melhorar sozinho. A pergunta é se ele consegue melhorar em uma tarefa sem jogar fora o que já sabia fazer em outra.
@@ -63,3 +51,14 @@ Paper: "Can Coding Agents Sustain Continual Evolution without Forgetting?", Tsin
 https://arxiv.org/abs/2611.03219
 
 Repositório: https://github.com/THU-Agent/continual-harness-evolution
+
+<div class="persona" data-audio="/audio/harness-auto-evolucao-esquece-o-que-sabia-comentario.mp3">
+  <button class="persona-avatar" type="button" aria-pressed="false" aria-label="Tocar o comentário em áudio com Caio">
+    <img src="/personas/caio.webp" alt="Retrato de Caio, em estilo de gravura" width="480" height="480" loading="lazy" />
+  </button>
+  <p class="persona-name">Caio</p>
+  <p class="persona-hint">Toque duas vezes para ouvir</p>
+  <div class="persona-progress" aria-hidden="true"><span></span></div>
+</div>
+
+<p class="persona-note"><small>Comentário em áudio, 2 min 04: o harness sem dono, a suíte que morre sozinha e o que eu faria na segunda. Não é a narração do texto.</small></p>

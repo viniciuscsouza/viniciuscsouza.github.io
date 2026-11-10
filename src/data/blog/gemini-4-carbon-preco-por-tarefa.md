@@ -11,18 +11,6 @@ tags:
 draft: false
 ---
 
-
-<div class="persona" data-audio="/audio/gemini-4-carbon-preco-por-tarefa-comentario.mp3">
-  <button class="persona-avatar" type="button" aria-pressed="false" aria-label="Tocar o comentário em áudio com Bruna">
-    <img src="/personas/bruna.webp" alt="Retrato de Bruna, em estilo de gravura" width="480" height="480" loading="lazy" />
-  </button>
-  <p class="persona-name">Bruna</p>
-  <p class="persona-hint">Toque duas vezes para ouvir</p>
-  <div class="persona-progress" aria-hidden="true"><span></span></div>
-</div>
-
-<p class="persona-note"><small>Comentário em áudio, 1 min 46: Empolgada mas concreta: o custo por tarefa vira negociação comercial e o /swarm é o produto. Não é a narração do texto.</small></p>
-
 Dois modelos da mesma geração, o mesmo preço introdutório: US$ 2 por milhão de tokens de entrada e US$ 10 por milhão de saída. O Carbon, um deles, gasta mais tokens que o Argon para explorar um problema. Mesmo assim, a Google o apresenta como a opção mais barata — desde que a conta seja feita por tarefa concluída, e não por token.
 
 Essa troca de denominador é o anúncio. O resto é consequência dela.
@@ -46,3 +34,14 @@ Para quem escolhe modelo no dia a dia, a pergunta muda de forma. Não é mais "q
 E é aí que a régua nova cobra o preço dela. Se o denominador é "tarefa concluída", e quem mede é o fornecedor, então o critério de aceite precisa ser definido por você **antes** de contar token. Não depois, olhando o relatório de consumo. Um teste em que a tarefa é dada por concluída quando o modelo para de tentar mede paciência, não competência.
 
 A conta que vale é a sua, e ela começa pelo critério, não pelo preço. Escolha um conjunto de tarefas reais do seu fluxo, escreva o que conta como aceitável, rode com os dois modelos e conte quantas tentativas cada um levou até passar nesse critério. O total de tokens vem depois. Se o critério for o mesmo para os dois, a comparação vale. Se não for, o número que sobra é o do anúncio — e esse serve para vender, não para decidir.
+
+<div class="persona" data-audio="/audio/gemini-4-carbon-preco-por-tarefa-comentario.mp3">
+  <button class="persona-avatar" type="button" aria-pressed="false" aria-label="Tocar o comentário em áudio com Bruna">
+    <img src="/personas/bruna.webp" alt="Retrato de Bruna, em estilo de gravura" width="480" height="480" loading="lazy" />
+  </button>
+  <p class="persona-name">Bruna</p>
+  <p class="persona-hint">Toque duas vezes para ouvir</p>
+  <div class="persona-progress" aria-hidden="true"><span></span></div>
+</div>
+
+<p class="persona-note"><small>Comentário em áudio, 1 min 46: Empolgada mas concreta: o custo por tarefa vira negociação comercial e o /swarm é o produto. Não é a narração do texto.</small></p>

@@ -13,18 +13,6 @@ tags:
 description: "No MemoryTax, reler a história inteira deu 92% com GPT-6 Luna; a memória Mem0, 80%. Quem decide a conta é o número de perguntas por história."
 ---
 
-
-<div class="persona" data-audio="/audio/memoria-custa-mais-caro-que-reler-comentario.mp3">
-  <button class="persona-avatar" type="button" aria-pressed="false" aria-label="Tocar o comentário em áudio com Vicente">
-    <img src="/personas/vicente.webp" alt="Retrato de Vicente, em estilo de gravura" width="480" height="480" loading="lazy" />
-  </button>
-  <p class="persona-name">Vicente</p>
-  <p class="persona-hint">Toque duas vezes para ouvir</p>
-  <div class="persona-progress" aria-hidden="true"><span></span></div>
-</div>
-
-<p class="persona-note"><small>Comentário em áudio, 2 min 28: as duas contas da memória: a que o paper faz e a que decide em produção. Não é a narração do texto.</small></p>
-
 Antes de escolher um sistema de memória para agente, faça uma conta que quase ninguém faz: quanto custa montar o store e quantas perguntas a mesma história vai receber depois disso. Se a segunda resposta for pequena, a memória que parecia upgrade é só uma despesa adiantada.
 
 O paper MemoryTax, publicado no arXiv em outubro de 2026 por Zedong Peng, da SJTU, faz essa conta com números. O estudo é pequeno, e o paper declara isso: uma única conversa do LoCoMo, com 419 turnos distribuídos em 19 sessões e 152 perguntas de quatro tipos. Compara quatro formas de dar memória a um agente. A referência é a mais simples de todas: colocar a história crua inteira na janela do modelo e deixar que ele leia tudo a cada pergunta.
@@ -65,3 +53,14 @@ Fico com uma regra prática, que é leitura minha e não conclusão do paper: a 
 ## 📎 Fonte Original
 
 Zedong Peng, "MemoryTax: The Bitter Lesson of Agent Memory", arXiv:2610.29823, v1, 21/10/2026. Zedong Peng, Shanghai Jiao Tong University (SJTU). https://arxiv.org/abs/2610.29823
+
+<div class="persona" data-audio="/audio/memoria-custa-mais-caro-que-reler-comentario.mp3">
+  <button class="persona-avatar" type="button" aria-pressed="false" aria-label="Tocar o comentário em áudio com Vicente">
+    <img src="/personas/vicente.webp" alt="Retrato de Vicente, em estilo de gravura" width="480" height="480" loading="lazy" />
+  </button>
+  <p class="persona-name">Vicente</p>
+  <p class="persona-hint">Toque duas vezes para ouvir</p>
+  <div class="persona-progress" aria-hidden="true"><span></span></div>
+</div>
+
+<p class="persona-note"><small>Comentário em áudio, 2 min 28: as duas contas da memória: a que o paper faz e a que decide em produção. Não é a narração do texto.</small></p>

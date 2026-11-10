@@ -13,18 +13,6 @@ tags:
 description: "Um paper do Shanghai AI Lab faz o agente minerar as próprias falhas e reescrever o harness que o governa, com ganho de até 40 pontos no AppWorld e um portão de não-regressão em held-out."
 ---
 
-
-<div class="persona" data-audio="/audio/self-harness-quando-o-proprio-agente-melhora-o-harness-comentario.mp3">
-  <button class="persona-avatar" type="button" aria-pressed="false" aria-label="Tocar o comentário em áudio com Helena">
-    <img src="/personas/helena.webp" alt="Retrato de Helena, em estilo de gravura" width="480" height="480" loading="lazy" />
-  </button>
-  <p class="persona-name">Helena</p>
-  <p class="persona-hint">Toque duas vezes para ouvir</p>
-  <div class="persona-progress" aria-hidden="true"><span></span></div>
-</div>
-
-<p class="persona-note"><small>Comentário em áudio, 1 min 40: o que o desenho do laço ensina, onde o placar engana e o que eu levaria para produção. Não é a narração do texto.</small></p>
-
 ## Sumário Executivo
 
 Um agente é modelo mais harness. O modelo é o motor; o harness é o resto do carro: prompt, ferramentas, memória, regras de verificação, política de execução, orquestração. O paper Self-Harness, do Shanghai AI Lab, testa se um modelo congelado consegue melhorar esse envelope sozinho, sem engenheiro humano e sem um modelo mais forte no papel de professor.
@@ -131,3 +119,14 @@ Para quem constrói agente em produção, isso sugere quatro peças: um verifica
 ## 📎 Fonte Original
 
 > Este post foi baseado no paper [Self-Harness: Harnesses That Improve Themselves](https://arxiv.org/abs/2606.09498) (arXiv 2606.09498v3), de Hangfan Zhang, Shao Zhang, Kangcong Li, Chen Zhang, Yang Chen, Yiqun Zhang, Lei Bai e Shuyue Hu, Shanghai Artificial Intelligence Laboratory.
+
+<div class="persona" data-audio="/audio/self-harness-quando-o-proprio-agente-melhora-o-harness-comentario.mp3">
+  <button class="persona-avatar" type="button" aria-pressed="false" aria-label="Tocar o comentário em áudio com Helena">
+    <img src="/personas/helena.webp" alt="Retrato de Helena, em estilo de gravura" width="480" height="480" loading="lazy" />
+  </button>
+  <p class="persona-name">Helena</p>
+  <p class="persona-hint">Toque duas vezes para ouvir</p>
+  <div class="persona-progress" aria-hidden="true"><span></span></div>
+</div>
+
+<p class="persona-note"><small>Comentário em áudio, 1 min 40: o que o desenho do laço ensina, onde o placar engana e o que eu levaria para produção. Não é a narração do texto.</small></p>

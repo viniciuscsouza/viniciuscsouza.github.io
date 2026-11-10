@@ -13,9 +13,13 @@ const PALETTE = {
   rule: "#c9bca4",
 };
 
-/** Descobre a persona do post pelos nomes de áudio no corpo. */
+/** Descobre a persona do post: pelo bloco de persona no corpo, com fallback no nome do áudio. */
 function personaOf(post) {
   const body = post.body ?? "";
+  const named = [...body.matchAll(/class="persona-name"[^>]*>([^<]+)</g)]
+    .map(m => m[1].trim().toLowerCase())
+    .filter(slug => PERSONAS.includes(slug));
+  if (named.length) return { slug: named[0], count: new Set(named).size };
   const found = [...body.matchAll(/data-audio="[^"]*?-([a-z]+)\.mp3"/g)]
     .map(m => m[1])
     .filter(slug => PERSONAS.includes(slug));

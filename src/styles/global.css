@@ -284,3 +284,114 @@ html[data-theme="dark"] audio {
   opacity: 0.75;
   font-style: italic;
 }
+
+/* Mini-player fixo: o áudio do blog continua tocando entre páginas. */
+.mini-player {
+  position: fixed;
+  inset-inline: 0;
+  bottom: 0;
+  z-index: 60;
+  display: grid;
+  grid-template-columns: 44px minmax(0, 1fr) auto auto;
+  align-items: center;
+  gap: 0.6rem;
+  width: min(560px, calc(100% - 1.5rem));
+  margin: 0 auto calc(0.75rem + env(safe-area-inset-bottom, 0px));
+  padding: 0.55rem 0.7rem 0.65rem;
+  background: var(--background, #f4ecdd);
+  color: var(--foreground, #151310);
+  border: 1px solid color-mix(in srgb, currentColor 22%, transparent);
+  border-radius: 0.65rem;
+  box-shadow: 0 10px 28px rgb(0 0 0 / 0.22);
+  overflow: hidden;
+  color-scheme: light;
+}
+
+html[data-theme="dark"] .mini-player {
+  color-scheme: dark;
+}
+
+.mini-player[hidden] {
+  display: none;
+}
+
+.mini-avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid color-mix(in srgb, currentColor 30%, transparent);
+}
+
+.mini-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  min-width: 0;
+}
+
+.mini-title {
+  font-size: 0.82rem;
+  font-weight: 600;
+  line-height: 1.25;
+  text-decoration: none;
+  color: inherit;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.mini-persona {
+  font-size: 0.7rem;
+  opacity: 0.7;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.mini-toggle,
+.mini-close {
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  border: 1px solid color-mix(in srgb, currentColor 25%, transparent);
+  border-radius: 50%;
+  background: transparent;
+  color: inherit;
+  font-size: 0.72rem;
+  line-height: 1;
+  cursor: pointer;
+  transition: background 150ms ease;
+}
+
+.mini-toggle:hover,
+.mini-close:hover {
+  background: color-mix(in srgb, currentColor 10%, transparent);
+}
+
+.mini-progress {
+  position: absolute;
+  inset-inline: 0;
+  bottom: 0;
+  height: 2px;
+  background: color-mix(in srgb, currentColor 15%, transparent);
+}
+
+.mini-progress span {
+  display: block;
+  height: 100%;
+  width: 0%;
+  background: var(--accent, #b8860b);
+  transition: width 200ms linear;
+}
+
+@media (max-width: 420px) {
+  .mini-player {
+    grid-template-columns: 36px minmax(0, 1fr) auto auto;
+    gap: 0.45rem;
+  }
+  .mini-avatar {
+    width: 36px;
+    height: 36px;
+  }
+}

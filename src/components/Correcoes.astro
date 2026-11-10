@@ -1,0 +1,102 @@
+---
+type Correcao = { data: Date; texto: string };
+
+type Props = {
+  correcoes: Correcao[];
+  /** Mostra o link para a página com todas as correções. */
+  mostrarLink?: boolean;
+};
+
+const { correcoes = [], mostrarLink = true } = Astro.props;
+
+// Data sem fuso: a correção é um dia, não um instante.
+const fmt = new Intl.DateTimeFormat("pt-BR", {
+  day: "2-digit",
+  month: "short",
+  year: "numeric",
+  timeZone: "UTC",
+});
+
+const ordenadas = [...correcoes].sort(
+  (a, b) => b.data.getTime() - a.data.getTime()
+);
+---
+
+{
+  ordenadas.length > 0 && (
+    <aside class="correcoes" aria-label="Correções deste post">
+      <p class="correcoes-title">
+        <span aria-hidden="true">✎</span> Correções
+      </p>
+      <ul>
+        {ordenadas.map(c => (
+          <li>
+            <span class="correcoes-date">{fmt.format(c.data).replace(".", "")}</span>
+            <span>{c.texto}</span>
+          </li>
+        ))}
+      </ul>
+      {mostrarLink && (
+        <p class="correcoes-link">
+          <a href="/correcoes/">Todas as correções do blog</a>
+        </p>
+      )}
+    </aside>
+  )
+}
+
+<style>
+  .correcoes {
+    margin: 2rem 0 1.5rem;
+    padding: 1rem 1.15rem;
+    border: 1px dashed var(--border, #c9bca4);
+    border-left: 3px solid var(--accent, #b8860b);
+    border-radius: 0.25rem;
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  .correcoes-title {
+    margin: 0 0 0.6rem;
+    font-size: 0.72rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    opacity: 0.75;
+  }
+
+  .correcoes ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .correcoes li {
+    display: flex;
+    gap: 0.6rem;
+    align-items: baseline;
+    margin-bottom: 0.45rem;
+  }
+
+  .correcoes li:last-child {
+    margin-bottom: 0;
+  }
+
+  .correcoes :global(.correcoes-date) {
+    flex: none;
+    font-size: 0.75rem;
+    opacity: 0.7;
+    white-space: nowrap;
+  }
+
+  .correcoes-link {
+    margin: 0.75rem 0 0;
+    font-size: 0.78rem;
+  }
+
+  @media (max-width: 640px) {
+    .correcoes li {
+      flex-direction: column;
+      gap: 0.15rem;
+    }
+  }
+</style>

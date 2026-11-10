@@ -224,3 +224,41 @@ html[data-theme="dark"] audio {
   line-height: 1.45;
   opacity: 0.85;
 }
+
+/* Player dentro do card da grade: mesmo componente, escala menor. */
+.persona-card .persona {
+  margin: 0 0 0.5rem;
+  gap: 0;
+}
+
+.persona-card .persona-avatar {
+  border: 0;
+  background: none;
+}
+
+.persona-card .persona-avatar img {
+  width: 96px;
+  height: 96px;
+  margin: 0 auto 0.55rem;
+  border-radius: 50%;
+}
+
+.persona-card .persona-name {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.persona-card .persona-hint {
+  font-size: 0.7rem;
+}
+
+.persona-card .persona-progress {
+  width: 96px;
+}
+
+.persona-card-take {
+  margin: 0.5rem 0 0;
+  font-size: 0.78rem;
+  font-style: italic;
+  opacity: 0.9;
+}

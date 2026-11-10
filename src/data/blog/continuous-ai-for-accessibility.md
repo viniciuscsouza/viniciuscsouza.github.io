@@ -12,18 +12,6 @@ tags:
 description: "Exploração de como o GitHub utiliza IA para automatizar a triagem de feedback de acessibilidade e promover a inclusão contínua."
 ---
 
-
-<div class="persona" data-audio="/audio/continuous-ai-for-accessibility-comentario.mp3">
-  <button class="persona-avatar" type="button" aria-pressed="false" aria-label="Tocar o comentário em áudio com Helena">
-    <img src="/personas/helena.webp" alt="Retrato de Helena, em estilo de gravura" width="480" height="480" loading="lazy" />
-  </button>
-  <p class="persona-name">Helena</p>
-  <p class="persona-hint">Toque duas vezes para ouvir</p>
-  <div class="persona-progress" aria-hidden="true"><span></span></div>
-</div>
-
-<p class="persona-note"><small>Comentário em áudio, 1 min 44: os números de acessibilidade no GitHub, o que falta no estudo e onde a IA realmente ajuda. Não é a narração do texto.</small></p>
-
 O GitHub publicou recentemente um artigo fascinante sobre como eles estão utilizando o que chamam de **Continuous AI** para resolver um problema histórico: a fragmentação do feedback de acessibilidade.
 
 ## O Desafio: Feedback sem Dono
@@ -56,3 +44,14 @@ Como destaca o artigo, o sucesso da IA depende de uma base humana sólida. "Sem 
 
 ---
 *Para ler o artigo original completo (em inglês), acesse: [The GitHub Blog](https://github.blog/ai-and-ml/github-copilot/continuous-ai-for-accessibility-how-github-transforms-feedback-into-inclusion/)*
+
+<div class="persona" data-audio="/audio/continuous-ai-for-accessibility-comentario.mp3">
+  <button class="persona-avatar" type="button" aria-pressed="false" aria-label="Tocar o comentário em áudio com Helena">
+    <img src="/personas/helena.webp" alt="Retrato de Helena, em estilo de gravura" width="480" height="480" loading="lazy" />
+  </button>
+  <p class="persona-name">Helena</p>
+  <p class="persona-hint">Toque duas vezes para ouvir</p>
+  <div class="persona-progress" aria-hidden="true"><span></span></div>
+</div>
+
+<p class="persona-note"><small>Comentário em áudio, 1 min 44: os números de acessibilidade no GitHub, o que falta no estudo e onde a IA realmente ajuda. Não é a narração do texto.</small></p>

@@ -13,18 +13,6 @@ tags:
 description: "O Google Cloud lançou o Gemini for healthcare em preview nos EUA: o mesmo anúncio vende o agente para quem monta o pacote de autorização prévia e para quem confere o pacote. A peça que decide o resultado é a skill, não o modelo — e o único número do anúncio é uma estimativa sem estudo."
 ---
 
-
-<div class="persona" data-audio="/audio/gemini-healthcare-autorizacao-comentario.mp3">
-  <button class="persona-avatar" type="button" aria-pressed="false" aria-label="Tocar o comentário em áudio com Vicente">
-    <img src="/personas/vicente.webp" alt="Retrato de Vicente, em estilo de gravura" width="480" height="480" loading="lazy" />
-  </button>
-  <p class="persona-name">Vicente</p>
-  <p class="persona-hint">Toque duas vezes para ouvir</p>
-  <div class="persona-progress" aria-hidden="true"><span></span></div>
-</div>
-
-<p class="persona-note"><small>Comentário em áudio, 2 min 16: Vicente separa montar a evidência de decidir a cobertura — e cobra regime de mudança para a skill. Não é a narração do texto.</small></p>
-
 O anúncio do Gemini for healthcare, publicado em 10 de novembro pelo Google Cloud, descreve o mesmo produto duas vezes, para dois públicos que normalmente se enfrentam. Para provedores: "authorization packets are assembled against payer policy before submission, so fewer claims come back denied" (tradução minha: os pacotes de autorização são montados contra a política do pagador antes do envio, para que voltem menos pedidos negados). Para planos de saúde e pagadores: "Checks incoming requests against the health plan's medical policies and organizes the findings for reviewers" (confere os pedidos recebidos contra as políticas médicas do plano e organiza os achados para os revisores).
 
 O primeiro fluxo não para na montagem do pacote. O texto continua: "If denials do occur, and the record supports it, it drafts an appeal grounded directly in the clinical record and the plan's policy" (se houver negativa, e o prontuário sustentar, redige um recurso fundamentado diretamente no prontuário clínico e na política do plano). O mesmo documento de política que o provedor tenta satisfazer é o que o agente do plano usa para conferir. Separo o que é do anúncio e o que é meu: o anúncio descreve dois fluxos; a observação de que eles se encontram na mesma política é minha.
@@ -66,3 +54,14 @@ Segundo, a versão da política do plano contra a qual a skill foi escrita, com 
 Terceiro, o log de uma negativa real, ou de um recurso real, de ponta a ponta: o pacote enviado, os trechos de prontuário citados, a política aplicada e a decisão do revisor. Vale conferir se cada citação aponta para o trecho certo. Citação verificável que aponta para o lugar errado é pior que citação nenhuma, porque passa na auditoria.
 
 O anúncio repete "human oversight" e, na frase que o Engadget registra, promete que "consequential decisions remain in qualified hands". Em nenhum trecho aparece qual mão qualificada é essa, em que ponto do fluxo ela entra, nem o que fica registrado quando ela discorda do agente. Ao anúncio não faltam números de resultado porque ninguém mediu ainda. Falta o desenho do controle: quem assina a decisão, com qual informação na frente, e o que acontece com o registro quando a assinatura vai contra o agente. Enquanto isso não estiver escrito, "human oversight" é uma frase do release, não um controle do sistema.
+
+<div class="persona" data-audio="/audio/gemini-healthcare-autorizacao-comentario.mp3">
+  <button class="persona-avatar" type="button" aria-pressed="false" aria-label="Tocar o comentário em áudio com Vicente">
+    <img src="/personas/vicente.webp" alt="Retrato de Vicente, em estilo de gravura" width="480" height="480" loading="lazy" />
+  </button>
+  <p class="persona-name">Vicente</p>
+  <p class="persona-hint">Toque duas vezes para ouvir</p>
+  <div class="persona-progress" aria-hidden="true"><span></span></div>
+</div>
+
+<p class="persona-note"><small>Comentário em áudio, 2 min 16: Vicente separa montar a evidência de decidir a cobertura — e cobra regime de mudança para a skill. Não é a narração do texto.</small></p>

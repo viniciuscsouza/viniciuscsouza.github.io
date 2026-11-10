@@ -14,18 +14,6 @@ tags:
 description: "Aprenda a criar planos de implementação estruturados e usar agentes customizados no Copilot para automatizar o ciclo de planejamento e geração de código."
 ---
 
-
-<div class="persona" data-audio="/audio/engenharia-de-contexto-no-copilot-parte-2-comentario.mp3">
-  <button class="persona-avatar" type="button" aria-pressed="false" aria-label="Tocar o comentário em áudio com Helena">
-    <img src="/personas/helena.webp" alt="Retrato de Helena, em estilo de gravura" width="480" height="480" loading="lazy" />
-  </button>
-  <p class="persona-name">Helena</p>
-  <p class="persona-hint">Toque duas vezes para ouvir</p>
-  <div class="persona-progress" aria-hidden="true"><span></span></div>
-</div>
-
-<p class="persona-note"><small>Comentário em áudio, 1 min 40: o plano como artefato de auditoria e por que pedir TDD a um agente não produz TDD. Não é a narração do texto.</small></p>
-
 Depois de estabelecermos a base de conhecimento do projeto na [Parte 1](./engenharia-de-contexto-no-copilot-parte-1), o próximo passo na engenharia de contexto é transformar esse conhecimento em ação. Nesta segunda parte, vamos focar em como o Copilot pode ajudar a planejar funcionalidades complexas e executar a implementação de forma estruturada.
 
 ## Passo 2: Criar o Plano de Implementação
@@ -108,3 +96,14 @@ Na última parte desta série, abordaremos as melhores práticas para manter est
 ## 📎 Fonte Original
 
 > Este post foi baseado no artigo original: [Set up a context engineering flow in VS Code](https://code.visualstudio.com/docs/copilot/guides/context-engineering-guide)
+
+<div class="persona" data-audio="/audio/engenharia-de-contexto-no-copilot-parte-2-comentario.mp3">
+  <button class="persona-avatar" type="button" aria-pressed="false" aria-label="Tocar o comentário em áudio com Helena">
+    <img src="/personas/helena.webp" alt="Retrato de Helena, em estilo de gravura" width="480" height="480" loading="lazy" />
+  </button>
+  <p class="persona-name">Helena</p>
+  <p class="persona-hint">Toque duas vezes para ouvir</p>
+  <div class="persona-progress" aria-hidden="true"><span></span></div>
+</div>
+
+<p class="persona-note"><small>Comentário em áudio, 1 min 40: o plano como artefato de auditoria e por que pedir TDD a um agente não produz TDD. Não é a narração do texto.</small></p>

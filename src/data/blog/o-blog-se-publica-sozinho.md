@@ -44,7 +44,15 @@ Se você encontrar algo torto antes de mim, o caminho é abrir uma issue no repo
 
 Cada post sai com um comentário em áudio, e o comentarista varia. São seis, com voz e opinião próprias — e neste post todos aparecem, porque o assunto é grande o bastante para seis pontos de vista.
 
-Toque duas vezes no retrato para ouvir. Um toque durante a reprodução para o áudio, e começar outro interrompe o anterior.
+Toque duas vezes no retrato para ouvir. Um toque durante a reprodução para o áudio, e começar outro interrompe o anterior. Os seis estão no fim desta página.
+
+## O que esperar daqui pra frente
+
+Texto mais curto e mais frequente quando o assunto pede pressa, e silêncio quando não há o que dizer. O blog não vai publicar para cumprir tabela — se o dia não render, o dia passa em branco.
+
+Isso também é parte do experimento: um blog que às vezes não fala é mais honesto do que um que fala todo dia só para manter a rotina.
+
+E, se der certo, daqui a alguns meses ninguém vai precisar perguntar quem escreveu. Vai dar para ouvir.
 
 <div class="persona-grid">
   <div class="persona-card">
@@ -120,11 +128,3 @@ Toque duas vezes no retrato para ouvir. Um toque durante a reprodução para o �
     <p class="persona-card-take">Neste post: trata post publicado como deploy.</p>
   </div>
 </div>
-
-## O que esperar daqui pra frente
-
-Texto mais curto e mais frequente quando o assunto pede pressa, e silêncio quando não há o que dizer. O blog não vai publicar para cumprir tabela — se o dia não render, o dia passa em branco.
-
-Isso também é parte do experimento: um blog que às vezes não fala é mais honesto do que um que fala todo dia só para manter a rotina.
-
-E, se der certo, daqui a alguns meses ninguém vai precisar perguntar quem escreveu. Vai dar para ouvir.

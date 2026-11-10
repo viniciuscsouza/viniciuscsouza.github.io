@@ -13,17 +13,6 @@ tags:
 description: "A Anthropic lançou dois modelos que são o mesmo por baixo: Fable 5.2 para todo mundo, Mythos 5.2 só para organizações verificadas. O que mudou, o que os números dizem e onde eu desconfio."
 ---
 
-<div class="persona" data-audio="/audio/fable-5-2-comentario.mp3">
-  <button class="persona-avatar" type="button" aria-pressed="false" aria-label="Tocar o comentário em áudio com Nadine">
-    <img src="/personas/nadine.webp" alt="Retrato de Nadine, em estilo de gravura" width="480" height="480" loading="lazy" />
-  </button>
-  <p class="persona-name">Nadine</p>
-  <p class="persona-hint">Toque duas vezes para ouvir</p>
-  <div class="persona-progress" aria-hidden="true"><span></span></div>
-</div>
-
-<p class="persona-note"><small>Comentário em áudio, 2 minutos e meio: o que o lançamento revela e onde eu desconfio dos números. Não é a narração do texto.</small></p>
-
 ## Sumário Executivo
 
 A Anthropic lançou o **Claude Fable 5.2** e o **Claude Mythos 5.2**, e o detalhe estrutural do anúncio importa mais que os benchmarks: são **o mesmo modelo por baixo**. O Fable tem classificadores que bloqueiam cibersegurança ofensiva e biologia de pesquisa e vai para todos. O Mythos é o mesmo modelo com essas travas fora, liberado apenas para organizações aprovadas nos programas de verificação Cyber e Life Sciences.
@@ -96,3 +85,14 @@ O que eu levaria para a prática é menos empolgante e mais útil: continue no m
 > Este post foi baseado em [Claude Fable 5.2 and Mythos 5.2](https://www.anthropic.com/claude-fable-and-mythos-5-2), publicado pela Anthropic em 9 de novembro de 2026.
 
 Leitura complementar: o [system card](https://www.anthropic.com/document/claude-fable-5-2-mythos-5-2-system-card) do modelo, que o post cita em vários pontos.
+
+<div class="persona" data-audio="/audio/fable-5-2-comentario.mp3">
+  <button class="persona-avatar" type="button" aria-pressed="false" aria-label="Tocar o comentário em áudio com Nadine">
+    <img src="/personas/nadine.webp" alt="Retrato de Nadine, em estilo de gravura" width="480" height="480" loading="lazy" />
+  </button>
+  <p class="persona-name">Nadine</p>
+  <p class="persona-hint">Toque duas vezes para ouvir</p>
+  <div class="persona-progress" aria-hidden="true"><span></span></div>
+</div>
+
+<p class="persona-note"><small>Comentário em áudio, 2 minutos e meio: o que o lançamento revela e onde eu desconfio dos números. Não é a narração do texto.</small></p>

@@ -14,18 +14,6 @@ tags:
 description: "A Cloudflare recriou o Next.js em 1 semana usando IA, alcançando builds 4x mais rápidos e bundles 57% menores com o Vinext, um framework baseado em Vite."
 ---
 
-
-<div class="persona" data-audio="/audio/como-a-cloudflare-reescreveu-o-nextjs-em-apenas-1-semana-comentario.mp3">
-  <button class="persona-avatar" type="button" aria-pressed="false" aria-label="Tocar o comentário em áudio com Caio">
-    <img src="/personas/caio.webp" alt="Retrato de Caio, em estilo de gravura" width="480" height="480" loading="lazy" />
-  </button>
-  <p class="persona-name">Caio</p>
-  <p class="persona-hint">Toque duas vezes para ouvir</p>
-  <div class="persona-progress" aria-hidden="true"><span></span></div>
-</div>
-
-<p class="persona-note"><small>Comentário em áudio, 1 min 37: o que o número de uma semana esconde e por que ele não é recomendação para segunda-feira. Não é a narração do texto.</small></p>
-
 ## Sumário Executivo
 
 A Cloudflare rompeu a barreira da complexidade dos frameworks modernos ao reconstruir o Next.js do zero em apenas uma semana, utilizando um único engenheiro e IA para criar o **Vinext**: uma alternativa de alta performance baseada em Vite que reduz drasticamente o tempo de build e o tamanho dos pacotes finais.
@@ -47,3 +35,14 @@ O Vinext demonstra que muitas abstrações de software modernas podem ser "mulet
 ## 📎 Fonte Original
 
 > Este post foi baseado no artigo original: [How we rebuilt Next.js with AI in one week](https://blog.cloudflare.com/vinext/)
+
+<div class="persona" data-audio="/audio/como-a-cloudflare-reescreveu-o-nextjs-em-apenas-1-semana-comentario.mp3">
+  <button class="persona-avatar" type="button" aria-pressed="false" aria-label="Tocar o comentário em áudio com Caio">
+    <img src="/personas/caio.webp" alt="Retrato de Caio, em estilo de gravura" width="480" height="480" loading="lazy" />
+  </button>
+  <p class="persona-name">Caio</p>
+  <p class="persona-hint">Toque duas vezes para ouvir</p>
+  <div class="persona-progress" aria-hidden="true"><span></span></div>
+</div>
+
+<p class="persona-note"><small>Comentário em áudio, 1 min 37: o que o número de uma semana esconde e por que ele não é recomendação para segunda-feira. Não é a narração do texto.</small></p>

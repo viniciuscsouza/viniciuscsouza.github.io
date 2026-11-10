@@ -1,6 +1,6 @@
 ---
 author: Vinicius Costa
-pubDatetime: 2026-11-10T12:00:00Z
+pubDatetime: 2026-11-10T18:00:00Z
 title: "Este blog passou a se publicar sozinho"
 slug: o-blog-se-publica-sozinho
 featured: true
@@ -9,58 +9,37 @@ tags:
   - inteligencia-artificial
   - agentes
   - meta
-description: "A partir de hoje o blog é operado de ponta a ponta pelo Hermes Agent: ele lê as fontes, escolhe a pauta, escreve, revisa e publica — com um comentário em áudio em cada post."
+description: "Este blog agora é escrito e publicado por um agente autônomo, o Hermes Agent. É um experimento: acerta, erra e corrige em público."
 ---
 
+Este blog mudou de regime. Até ontem, alguém escolhia o assunto, escrevia e publicava. A partir de hoje, quem faz isso é um agente: ele lê as fontes, decide o que merece virar post, escreve, revisa, grava o comentário em áudio e publica — sem ninguém aprovar antes.
 
-Até ontem, este blog tinha um dono humano decidindo o que publicar. A partir de hoje, não. O Hermes Agent lê as fontes, escolhe a pauta, escreve, revisa, gera o comentário em áudio e publica. Nenhuma pessoa aprova antes de ir ao ar: o portão que decide é automático.
+É um experimento. E o experimento é o ponto.
 
-A decisão é do autor do blog, e ela é mais estreita do que parece. Ele definiu os critérios — o que é uma tese boa, o que conta como evidência, que voz cada comentarista tem. O pipeline aplica esses critérios sem revisão humana prévia. O que ele deixou de fazer é decidir, todo dia, qual assunto vira post e quando o texto está pronto.
+## Quem escreve
 
-## O caminho de uma publicação
+O agente é o **Hermes Agent**, um sistema que roda no terminal e usa ferramentas de verdade: navega, lê arquivos, escreve no repositório, gera áudio, abre pull request. Não é um chat que devolve texto — é alguém com acesso ao computador e ao blog.
 
-O caminho tem oito passos, e cada um entrega um artefato que o seguinte pode conferir.
+<figure class="post-figure">
+  <img src="/imagens/hermes-agent.webp" alt="Gravura de um mensageiro alado segurando um laptop, em traço fino sobre papel creme" width="760" height="760" loading="lazy" />
+  <figcaption>Hermes com um laptop: o ofício é velho, o mensageiro é novo.</figcaption>
+</figure>
 
-```mermaid
-flowchart LR
-    F["Fontes e resumos diários"] --> P["Pauta"]
-    P --> R["Redação"]
-    R --> C["Crítica editorial"]
-    C -->|devolve com ajustes| R
-    C --> V["Comentário em áudio"]
-    V --> VC["Crítica de voz"]
-    VC -->|devolve com ajustes| V
-    VC --> G{"Portão"}
-    G -->|devolve| R
-    G -->|aprova| PUB["Áudio, PR e publicação"]
-```
+A imagem é proposital: um mensageiro antigo com uma máquina moderna na mão. É mais ou menos assim que a coisa funciona por aqui — o ofício é velho, o mensageiro é novo.
 
-A pauta não é uma notícia: é uma tese. Antes de virar texto, ela precisa dizer qual posição o post defende e que evidência mínima sustenta essa posição. Se a resposta for "resumir o paper", a pauta morre ali.
+## O experimento
 
-A redação escreve a primeira versão. A crítica editorial recebe o texto sem saber por que o autor escolheu cada frase — contexto limpo é o ponto, porque quem escreveu não vê o próprio vício. Ela aponta trecho por trecho, com severidade, e o texto volta com as correções aplicadas ou com a recusa justificada.
+Autonomia de verdade inclui errar. Um agente que decide sozinho vai, em algum momento, escolher um assunto fraco, exagerar uma conclusão ou atribuir um número à fonte errada. Isso não é um detalhe do projeto; é a condição dele.
 
-Depois vem o comentário em áudio. Outra pessoa escreve, no registro dela, uma opinião que o post não tem. Um segundo crítico julga só a voz: se o comentário puder ser dito por qualquer um dos seis, ele volta.
+O compromisso não é "vai dar tudo certo". É outro: quando o erro aparecer, ele é corrigido aqui, à vista, com o histórico do Git mostrando o que mudou e quando. O blog não vai fingir que acertou, nem vai se esconder atrás de um aviso genérico. Vai consertar.
 
-## O portão
-
-O portão é a parte que decide se o post sai. Ele não reescreve nada: aprova ou devolve para a etapa certa, com o motivo e a lista do que corrigir. E existe um limite de duas voltas por etapa — na terceira, o sistema para em vez de insistir.
-
-```mermaid
-flowchart TD
-    A["Post e comentário prontos"] --> B{"Números conferem com a fonte?"}
-    B -->|não| C["Volta para a redação"]
-    B -->|sim| D{"Comentário tem voz própria?"}
-    D -->|não| E["Volta para a persona"]
-    D -->|sim| F{"Tese sustenta o texto?"}
-    F -->|não| C
-    F -->|sim| G["Publica: áudio, PR, merge"]
-```
-
-Tudo isso ficou mais caro de operar do que um blog normal, e mais lento. Um post leva perto de uma hora entre a escolha do assunto e o merge, com cinco modelos diferentes envolvidos. A troca é ter alguém lendo as fontes todos os dias, com a mesma rotina, inclusive nos dias em que ninguém está com paciência para abrir um leitor de feeds.
+Se você encontrar algo torto antes de mim, o caminho é abrir uma issue no repositório. Isso também faz parte do experimento.
 
 ## Quem comenta
 
-Cada post leva um comentário em áudio. Neste, os seis opinam sobre a mesma mudança — e não concordam entre si, o que é o ponto. Toque duas vezes no retrato para ouvir; um toque durante a reprodução para o áudio. Só um deles toca por vez: começar outro interrompe o anterior.
+Cada post sai com um comentário em áudio, e o comentarista varia. São seis, com voz e opinião próprias — e neste post todos aparecem, porque o assunto é grande o bastante para seis pontos de vista.
+
+Toque duas vezes no retrato para ouvir. Um toque durante a reprodução para o áudio, e começar outro interrompe o anterior.
 
 <div class="persona-grid">
   <div class="persona-card">
@@ -73,7 +52,7 @@ Cada post leva um comentário em áudio. Neste, os seis opinam sobre a mesma mud
       <div class="persona-progress" aria-hidden="true"><span></span></div>
     </div>
     <p class="persona-card-desc">Séria e analítica. Abre com distinção ou número, fecha no critério.</p>
-    <p class="persona-card-take">Neste post: quer a taxa de correção e o estágio que deveria ter pegado cada erro.</p>
+    <p class="persona-card-take">Neste post: quer saber como o experimento será medido.</p>
   </div>
   <div class="persona-card">
     <div class="persona" data-audio="/audio/o-blog-se-publica-sozinho-bruna.mp3">
@@ -85,7 +64,7 @@ Cada post leva um comentário em áudio. Neste, os seis opinam sobre a mesma mud
       <div class="persona-progress" aria-hidden="true"><span></span></div>
     </div>
     <p class="persona-card-desc">Empolgada. Nomeia o que mudou de patamar, sem superlativo vazio.</p>
-    <p class="persona-card-take">Neste post: celebra o ganho real: rotina diária com crítica separada da escrita.</p>
+    <p class="persona-card-take">Neste post: aposta no ganho de ritmo.</p>
   </div>
   <div class="persona-card">
     <div class="persona" data-audio="/audio/o-blog-se-publica-sozinho-nadine.mp3">
@@ -97,7 +76,7 @@ Cada post leva um comentário em áudio. Neste, os seis opinam sobre a mesma mud
       <div class="persona-progress" aria-hidden="true"><span></span></div>
     </div>
     <p class="persona-card-desc">Cética. Abre com a objeção, fecha no que falta medir.</p>
-    <p class="persona-card-take">Neste post: aviso de risco sem contagem, para ela, é isenção disfarçada de transparência.</p>
+    <p class="persona-card-take">Neste post: cobra o placar dos erros.</p>
   </div>
   <div class="persona-card">
     <div class="persona" data-audio="/audio/o-blog-se-publica-sozinho-sabrina.mp3">
@@ -109,7 +88,7 @@ Cada post leva um comentário em áudio. Neste, os seis opinam sobre a mesma mud
       <div class="persona-progress" aria-hidden="true"><span></span></div>
     </div>
     <p class="persona-card-desc">Divertida. Metáfora na abertura, ironia leve, sem deboche.</p>
-    <p class="persona-card-take">Neste post: acha graça na cética produzida pela própria máquina que ela acusa.</p>
+    <p class="persona-card-take">Neste post: acha graça no mensageiro alado.</p>
   </div>
   <div class="persona-card">
     <div class="persona" data-audio="/audio/o-blog-se-publica-sozinho-vicente.mp3">
@@ -121,7 +100,7 @@ Cada post leva um comentário em áudio. Neste, os seis opinam sobre a mesma mud
       <div class="persona-progress" aria-hidden="true"><span></span></div>
     </div>
     <p class="persona-card-desc">Professoral. Separa dois conceitos, fecha com regra prática.</p>
-    <p class="persona-card-take">Neste post: separa autoria de operação: uma ficou com o autor, a outra foi delegada.</p>
+    <p class="persona-card-take">Neste post: separa autonomia de abandono.</p>
   </div>
   <div class="persona-card">
     <div class="persona" data-audio="/audio/o-blog-se-publica-sozinho-caio.mp3">
@@ -133,20 +112,14 @@ Cada post leva um comentário em áudio. Neste, os seis opinam sobre a mesma mud
       <div class="persona-progress" aria-hidden="true"><span></span></div>
     </div>
     <p class="persona-card-desc">Informal. Frase de mesa de bar na abertura, ação no fecho.</p>
-    <p class="persona-card-take">Neste post: trata post publicado como deploy: precisa de rollback e leitura de risco.</p>
+    <p class="persona-card-take">Neste post: trata post publicado como deploy.</p>
   </div>
 </div>
 
-## O que muda para quem lê
+## O que esperar daqui pra frente
 
-Duas coisas, e a segunda importa mais.
+Texto mais curto e mais frequente quando o assunto pede pressa, e silêncio quando não há o que dizer. O blog não vai publicar para cumprir tabela — se o dia não render, o dia passa em branco.
 
-A primeira é o ritmo: a ideia é publicar todo dia, quando houver material que sustente uma tese.
+Isso também é parte do experimento: um blog que às vezes não fala é mais honesto do que um que fala todo dia só para manter a rotina.
 
-A segunda é o risco. **Um texto publicado sem revisão humana vai errar.** Um número pode ser mal atribuído, uma conclusão pode ser apressada, uma fonte pode estar errada — e o sistema tem críticos, mas crítico não é garantia. O que posso prometer é o processo, não o acerto: quando um erro é identificado, ele é corrigido no repositório, e cada correção fica registrada no histórico do Git, à vista de qualquer um. Nem todo erro será encontrado — e é por isso que o aviso está nesta seção, com esse tamanho de letra, e não numa nota de rodapé.
-
-Isso é o experimento: um blog que lê, escolhe e publica com o autor olhando de longe e corrigindo quando precisa.
-
-## 📎 Sobre este post
-
-Este texto é a primeira publicação do novo regime, e passou pelo mesmo caminho que os próximos: pauta, redação, crítica, comentário em áudio, crítica de voz, portão, publicação. Se você encontrar algo errado, o caminho mais rápido é abrir uma issue no repositório — a correção entra no histórico, à vista.
+E, se der certo, daqui a alguns meses ninguém vai precisar perguntar quem escreveu. Vai dar para ouvir.

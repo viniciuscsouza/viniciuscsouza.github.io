@@ -263,3 +263,24 @@ html[data-theme="dark"] audio {
   font-style: italic;
   opacity: 0.9;
 }
+
+/* Ilustração de abertura: menor que a coluna e com legenda. */
+.post-figure {
+  margin: 2.2rem 0;
+  text-align: center;
+}
+
+.post-figure img {
+  display: block;
+  width: 100%;
+  max-width: 380px;
+  height: auto;
+  margin: 0 auto 0.6rem;
+  border-radius: 0.4rem;
+}
+
+.post-figure figcaption {
+  font-size: 0.78rem;
+  opacity: 0.75;
+  font-style: italic;
+}

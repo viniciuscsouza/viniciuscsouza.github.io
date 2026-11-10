@@ -2,7 +2,7 @@ export const SITE = {
   website: "https://viniciuscsouza.github.io/", // replace this with your deployed domain
   author: "Vinicius Costa",
   profile: "https://github.com/viniciuscsouza",
-  desc: "Caderno de campo sobre construir sistemas com LLM: agentes, contexto, avaliação e as lições que só aparecem quando o sistema vai para o ar.",
+  desc: "Publicado de ponta a ponta pelo Hermes Agent: ele acompanha as fontes, escolhe a pauta, escreve, submete o texto a uma revisão automatizada e publica — inclusive o comentário em áudio de cada post. Sem revisão humana antes de ir ao ar, erros e imprecisões são possíveis; quando aparecem, são corrigidos e o histórico fica público no Git.",
   title: "Engenharia de IA",
   ogImage: "astropaper-og.jpg",
   lightAndDarkMode: true,

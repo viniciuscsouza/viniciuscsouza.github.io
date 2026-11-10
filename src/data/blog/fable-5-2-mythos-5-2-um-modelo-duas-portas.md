@@ -3,7 +3,7 @@ author: Vinicius Costa
 pubDatetime: 2026-11-09T16:00:00Z
 title: "Fable 5.2 e Mythos 5.2: um modelo, duas portas"
 slug: fable-5-2-mythos-5-2-um-modelo-duas-portas
-featured: true
+featured: false
 draft: false
 tags:
   - inteligencia-artificial

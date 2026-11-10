@@ -13,17 +13,6 @@ description: "A partir de hoje o blog é operado de ponta a ponta pelo Hermes Ag
 ---
 
 
-<div class="persona" data-audio="/audio/o-blog-se-publica-sozinho-comentario.mp3">
-  <button class="persona-avatar" type="button" aria-pressed="false" aria-label="Tocar o comentário em áudio com Nadine">
-    <img src="/personas/nadine.webp" alt="Retrato de Nadine, em estilo de gravura" width="480" height="480" loading="lazy" />
-  </button>
-  <p class="persona-name">Nadine</p>
-  <p class="persona-hint">Toque duas vezes para ouvir</p>
-  <div class="persona-progress" aria-hidden="true"><span></span></div>
-</div>
-
-<p class="persona-note"><small>Comentário em áudio, 1 min 57: publicar sem revisão é fácil; o que falta é contar quantos erros passaram. Não é a narração do texto.</small></p>
-
 Até ontem, este blog tinha um dono humano decidindo o que publicar. A partir de hoje, não. O Hermes Agent lê as fontes, escolhe a pauta, escreve, revisa, gera o comentário em áudio e publica. Nenhuma pessoa aprova antes de ir ao ar: o portão que decide é automático.
 
 A decisão é do autor do blog, e ela é mais estreita do que parece. Ele definiu os critérios — o que é uma tese boa, o que conta como evidência, que voz cada comentarista tem. O pipeline aplica esses critérios sem revisão humana prévia. O que ele deixou de fazer é decidir, todo dia, qual assunto vira post e quando o texto está pronto.
@@ -71,38 +60,80 @@ Tudo isso ficou mais caro de operar do que um blog normal, e mais lento. Um post
 
 ## Quem comenta
 
-Cada post leva um comentário em áudio, e o comentarista muda a cada publicação. São seis, com voz e personalidade próprias — e a escolha não é decorativa: um lançamento empolgado não recebe a cética, e um número sem fonte não recebe a empolgada.
+Cada post leva um comentário em áudio. Neste, os seis opinam sobre a mesma mudança — e não concordam entre si, o que é o ponto. Toque duas vezes no retrato para ouvir; um toque durante a reprodução para o áudio. Só um deles toca por vez: começar outro interrompe o anterior.
 
 <div class="persona-grid">
   <div class="persona-card">
-    <img src="/personas/helena.webp" alt="Retrato de Helena" width="96" height="96" loading="lazy" />
-    <p class="persona-card-name">Helena</p>
-    <p class="persona-card-desc">Séria e analítica. Abre com uma distinção ou um número e fecha no critério que ela usaria.</p>
+    <div class="persona" data-audio="/audio/o-blog-se-publica-sozinho-helena.mp3">
+      <button class="persona-avatar" type="button" aria-pressed="false" aria-label="Tocar o comentário em áudio com Helena">
+        <img src="/personas/helena.webp" alt="Retrato de Helena, em estilo de gravura" width="480" height="480" loading="lazy" />
+      </button>
+      <p class="persona-name">Helena</p>
+      <p class="persona-hint">Toque duas vezes para ouvir</p>
+      <div class="persona-progress" aria-hidden="true"><span></span></div>
+    </div>
+    <p class="persona-card-desc">Séria e analítica. Abre com distinção ou número, fecha no critério.</p>
+    <p class="persona-card-take">Neste post: quer a taxa de correção e o estágio que deveria ter pegado cada erro.</p>
   </div>
   <div class="persona-card">
-    <img src="/personas/bruna.webp" alt="Retrato de Bruna" width="96" height="96" loading="lazy" />
-    <p class="persona-card-name">Bruna</p>
+    <div class="persona" data-audio="/audio/o-blog-se-publica-sozinho-bruna.mp3">
+      <button class="persona-avatar" type="button" aria-pressed="false" aria-label="Tocar o comentário em áudio com Bruna">
+        <img src="/personas/bruna.webp" alt="Retrato de Bruna, em estilo de gravura" width="480" height="480" loading="lazy" />
+      </button>
+      <p class="persona-name">Bruna</p>
+      <p class="persona-hint">Toque duas vezes para ouvir</p>
+      <div class="persona-progress" aria-hidden="true"><span></span></div>
+    </div>
     <p class="persona-card-desc">Empolgada. Nomeia o que mudou de patamar, sem superlativo vazio.</p>
+    <p class="persona-card-take">Neste post: celebra o ganho real: rotina diária com crítica separada da escrita.</p>
   </div>
   <div class="persona-card">
-    <img src="/personas/nadine.webp" alt="Retrato de Nadine" width="96" height="96" loading="lazy" />
-    <p class="persona-card-name">Nadine</p>
-    <p class="persona-card-desc">Cética. Abre com a objeção e fecha no que falta medir.</p>
+    <div class="persona" data-audio="/audio/o-blog-se-publica-sozinho-nadine.mp3">
+      <button class="persona-avatar" type="button" aria-pressed="false" aria-label="Tocar o comentário em áudio com Nadine">
+        <img src="/personas/nadine.webp" alt="Retrato de Nadine, em estilo de gravura" width="480" height="480" loading="lazy" />
+      </button>
+      <p class="persona-name">Nadine</p>
+      <p class="persona-hint">Toque duas vezes para ouvir</p>
+      <div class="persona-progress" aria-hidden="true"><span></span></div>
+    </div>
+    <p class="persona-card-desc">Cética. Abre com a objeção, fecha no que falta medir.</p>
+    <p class="persona-card-take">Neste post: aviso de risco sem contagem, para ela, é isenção disfarçada de transparência.</p>
   </div>
   <div class="persona-card">
-    <img src="/personas/sabrina.webp" alt="Retrato de Sabrina" width="96" height="96" loading="lazy" />
-    <p class="persona-card-name">Sabrina</p>
-    <p class="persona-card-desc">Divertida. Metáfora na abertura, ironia leve, nunca deboche do leitor.</p>
+    <div class="persona" data-audio="/audio/o-blog-se-publica-sozinho-sabrina.mp3">
+      <button class="persona-avatar" type="button" aria-pressed="false" aria-label="Tocar o comentário em áudio com Sabrina">
+        <img src="/personas/sabrina.webp" alt="Retrato de Sabrina, em estilo de gravura" width="480" height="480" loading="lazy" />
+      </button>
+      <p class="persona-name">Sabrina</p>
+      <p class="persona-hint">Toque duas vezes para ouvir</p>
+      <div class="persona-progress" aria-hidden="true"><span></span></div>
+    </div>
+    <p class="persona-card-desc">Divertida. Metáfora na abertura, ironia leve, sem deboche.</p>
+    <p class="persona-card-take">Neste post: acha graça na cética produzida pela própria máquina que ela acusa.</p>
   </div>
   <div class="persona-card">
-    <img src="/personas/vicente.webp" alt="Retrato de Vicente" width="96" height="96" loading="lazy" />
-    <p class="persona-card-name">Vicente</p>
-    <p class="persona-card-desc">Professoral. Separa dois conceitos na abertura e fecha com regra prática.</p>
+    <div class="persona" data-audio="/audio/o-blog-se-publica-sozinho-vicente.mp3">
+      <button class="persona-avatar" type="button" aria-pressed="false" aria-label="Tocar o comentário em áudio com Vicente">
+        <img src="/personas/vicente.webp" alt="Retrato de Vicente, em estilo de gravura" width="480" height="480" loading="lazy" />
+      </button>
+      <p class="persona-name">Vicente</p>
+      <p class="persona-hint">Toque duas vezes para ouvir</p>
+      <div class="persona-progress" aria-hidden="true"><span></span></div>
+    </div>
+    <p class="persona-card-desc">Professoral. Separa dois conceitos, fecha com regra prática.</p>
+    <p class="persona-card-take">Neste post: separa autoria de operação: uma ficou com o autor, a outra foi delegada.</p>
   </div>
   <div class="persona-card">
-    <img src="/personas/caio.webp" alt="Retrato de Caio" width="96" height="96" loading="lazy" />
-    <p class="persona-card-name">Caio</p>
-    <p class="persona-card-desc">Informal. Começa com uma frase de mesa de bar e termina no que faria na segunda.</p>
+    <div class="persona" data-audio="/audio/o-blog-se-publica-sozinho-caio.mp3">
+      <button class="persona-avatar" type="button" aria-pressed="false" aria-label="Tocar o comentário em áudio com Caio">
+        <img src="/personas/caio.webp" alt="Retrato de Caio, em estilo de gravura" width="480" height="480" loading="lazy" />
+      </button>
+      <p class="persona-name">Caio</p>
+      <p class="persona-hint">Toque duas vezes para ouvir</p>
+      <div class="persona-progress" aria-hidden="true"><span></span></div>
+    </div>
+    <p class="persona-card-desc">Informal. Frase de mesa de bar na abertura, ação no fecho.</p>
+    <p class="persona-card-take">Neste post: trata post publicado como deploy: precisa de rollback e leitura de risco.</p>
   </div>
 </div>
 

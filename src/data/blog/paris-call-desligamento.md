@@ -11,21 +11,19 @@ tags:
   - seguranca
   - regulacao
 description: 'O Paris Call manda os laboratórios terem desligamento "within their control" — e o risco que o texto lista é o "loss of control". Sem prazo, sem sanção, sem teste.'
+correcoes:
+  - data: 2026-11-10
+    texto: "Abertura reescrita: o post agora diz o que é o Paris Call, quem assinou e qual cláusula está em jogo antes de entrar na discrepância das listas de países. O gancho original pressupunha um contexto que o leitor não tinha."
 ---
 
 
-<div class="persona" data-audio="/audio/paris-call-desligamento-comentario.mp3">
-  <button class="persona-avatar" type="button" aria-pressed="false" aria-label="Tocar o comentário em áudio com Helena">
-    <img src="/personas/helena.webp" alt="Retrato de Helena, em estilo de gravura" width="480" height="480" loading="lazy" />
-  </button>
-  <p class="persona-name">Helena</p>
-  <p class="persona-hint">Toque duas vezes para ouvir</p>
-  <div class="persona-progress" aria-hidden="true"><span></span></div>
-</div>
+Em 9 de novembro, véspera do Paris Peace Forum, Emmanuel Macron reuniu governos e laboratórios em Paris para assinar um compromisso de segurança em inteligência artificial. O documento, o Paris Call for AI Safety and Security, tem uma cláusula que virou manchete: os desenvolvedores devem implementar mecanismos de desligamento dos modelos que operam, inclusive durante o treino e no uso interno. Assinaram dez empresas — entre elas Anthropic, OpenAI, Microsoft, Mistral, Hugging Face e Cohere —, sete organizações da sociedade civil e um punhado de países.
 
-<p class="persona-note"><small>Comentário em áudio, 2 min 29: o número que não muda nada e o laudo sem dono. Discorda do post e cobra quem atesta o teste. Não é a narração do texto.</small></p>
+O que o texto pede é razoável, e é justamente por isso que vale ler com cuidado: um desligamento que funcione durante o treino e no uso interno cobre o trecho da operação onde ninguém de fora olha. O problema não está no que o texto pede, está no alcance: a cláusula vale para as operações "within their control", dentro do controle de quem desenvolve. O mesmo documento lista, como risco a avaliar, a "loss of control", a perda de controle.
 
-Seis, oito ou doze. É quanto vale a lista de países que assinaram o Paris Call for AI Safety and Security, dependendo de qual cópia oficial você abre. Todas são do mesmo documento e do mesmo dia, 9 de novembro de 2026.
+O detalhe que parece piada e não é aparece já na lista de signatários: o número de países depende de qual cópia oficial você abre.
+
+Três cópias oficiais, três contagens, o mesmo documento do mesmo dia: seis, oito e doze países.
 
 A [cópia no site do gabinete do primeiro-ministro do Canadá](https://www.pm.gc.ca/en/news/statements/2026/11/09/joint-declaration-paris-call-ai-safety-and-security) lista seis: Bahrain, Canadá, Finlândia, França, Noruega e Países Baixos. A [versão em inglês do Élysée](https://www.elysee.fr/en/emmanuel-macron/2026/11/09/paris-call-for-ai-safety-and-security) tem oito: os seis, mais Chipre e Quênia. A [versão em francês, no mesmo Élysée](https://www.elysee.fr/emmanuel-macron/2026/11/09/appel-de-paris-pour-la-securite-de-lintelligence-artificielle), chega a doze: os oito, mais Letônia, Áustria, Estônia e Irlanda. Conferi as três em 10/11, no fim da tarde em UTC.
 
@@ -35,7 +33,7 @@ A discrepância é o sintoma. As três cópias trazem o mesmo parágrafo de comp
 
 ## O que o texto promete
 
-O Paris Call foi assinado em 9 de novembro, véspera do Paris Peace Forum, que [segundo o The Decoder](https://the-decoder.com/eight-countries-and-top-ai-labs-agree-to-shutdown-mechanisms-in-new-paris-declaration/) reúne cerca de trinta chefes de Estado para tratar de regulação de IA nesta terça. A reunião que produziu o texto foi convocada por Macron. Entre as empresas, assinam Anthropic, Black Forest Labs, Cohere, Domyn, Hugging Face, Microsoft, Mistral AI, OpenAI, Sakana AI e Synthesia. Da sociedade civil, LawZero (de Yoshua Bengio), SaferAI, AI Safety Connect, Ifri, Geopolitical Center for the Datasphere, GPAI Policy Lab e CeSIA.
+O fórum que o texto antecede é o Paris Peace Forum, que [segundo o The Decoder](https://the-decoder.com/eight-countries-and-top-ai-labs-agree-to-shutdown-mechanisms-in-new-paris-declaration/) reúne cerca de trinta chefes de Estado para tratar de regulação de IA nesta terça. Entre as empresas, assinam Anthropic, Black Forest Labs, Cohere, Domyn, Hugging Face, Microsoft, Mistral AI, OpenAI, Sakana AI e Synthesia. Da sociedade civil, LawZero (de Yoshua Bengio), SaferAI, AI Safety Connect, Ifri, Geopolitical Center for the Datasphere, GPAI Policy Lab e CeSIA.
 
 Faltam nomes. Entre os países, Estados Unidos, Reino Unido, Japão e Alemanha não assinaram. O secretário do Tesouro americano, Scott Bessent, esteve na reunião e não assinou. Entre as empresas, Google, Meta e xAI não aparecem na lista.
 
@@ -72,6 +70,17 @@ O texto cria coisas. Prevê a publicação de resultados não sensíveis de aval
 O que o texto não cria é o que faria o desligamento ser verificável: não há prazo e não há sanção. Também não define padrão de teste para o desligamento — ninguém sabe o que conta como "mecanismo implementado", em quanto tempo ele precisa agir, nem quem atesta que funcionou.
 
 Não vou dizer que o texto é inútil. O que ele informa é o que os signatários dizem querer: dá a jornalistas e reguladores uma frase para citar depois e permite cobrança retroativa. Mas é o mesmo tipo de compromisso que a lista de signatários mostra ser: um que muda de tamanho durante o dia e que ninguém sabe ainda onde termina.
+
+<div class="persona" data-audio="/audio/paris-call-desligamento-comentario.mp3">
+  <button class="persona-avatar" type="button" aria-pressed="false" aria-label="Tocar o comentário em áudio com Helena">
+    <img src="/personas/helena.webp" alt="Retrato de Helena, em estilo de gravura" width="480" height="480" loading="lazy" />
+  </button>
+  <p class="persona-name">Helena</p>
+  <p class="persona-hint">Toque duas vezes para ouvir</p>
+  <div class="persona-progress" aria-hidden="true"><span></span></div>
+</div>
+
+<p class="persona-note"><small>Comentário em áudio, 2 min 29: o número que não muda nada e o laudo sem dono. Discorda do post e cobra quem atesta o teste. Não é a narração do texto.</small></p>
 
 ## O que fazer com isso
 

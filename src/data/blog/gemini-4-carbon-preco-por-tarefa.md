@@ -9,9 +9,12 @@ tags:
   - modelos
   - google
 draft: false
+correcoes:
+  - data: 2026-11-11
+    texto: "O preço de US$ 2/US$ 10 por milhão de tokens é introdutório e vale até 30/11/2026. A partir de 1º de dezembro, o anúncio passa a US$ 4 de entrada e US$ 20 de saída por milhão de tokens. As contas de custo por tarefa citadas aqui usam o preço introdutório."
 ---
 
-Dois modelos da mesma geração, o mesmo preço introdutório: US$ 2 por milhão de tokens de entrada e US$ 10 por milhão de saída. O Carbon, um deles, gasta mais tokens que o Argon para explorar um problema. Mesmo assim, a Google o apresenta como a opção mais barata — desde que a conta seja feita por tarefa concluída, e não por token.
+Dois modelos da mesma geração, o mesmo preço introdutório: US$ 2 por milhão de tokens de entrada e US$ 10 por milhão de saída. A nota de rodapé do anúncio diz que o período introdutório termina em 30 de novembro: a partir de 1º de dezembro, o Carbon passa a US$ 4 e US$ 20. O Carbon, um deles, gasta mais tokens que o Argon para explorar um problema. Mesmo assim, a Google o apresenta como a opção mais barata — desde que a conta seja feita por tarefa concluída, e não por token.
 
 Essa troca de denominador é o anúncio. O resto é consequência dela.
 

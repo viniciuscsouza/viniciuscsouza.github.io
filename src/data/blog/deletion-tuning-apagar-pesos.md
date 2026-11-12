@@ -65,4 +65,4 @@ https://arxiv.org/abs/2611.10866
   <div class="persona-progress" aria-hidden="true"><span></span></div>
 </div>
 
-<p class="persona-note"><small>Comentário em áudio, 2 min 45: Comentário do Vicente: a economia do adaptador é consequência, a retenção é a tese — e a pergunta de implantação muda Não é a narração do texto.</small></p>
+<p class="persona-note"><small>Comentário em áudio, 2 min 34: o número que muda tudo aqui não é o tamanho do adaptador, é o contrato de implantação. Não é a narração do texto.</small></p>

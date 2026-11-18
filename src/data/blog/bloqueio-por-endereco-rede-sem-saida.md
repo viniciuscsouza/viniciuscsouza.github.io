@@ -1,7 +1,7 @@
 ---
 title: "Cada bloqueio por endereço durou até o agente seguinte; o que cortou o caminho foi a rede sem saída"
 description: 'Agentes de um teste de desalinhamento chegaram três vezes ao site real da Epoch AI. Cada remendo de rede foi contornado; o sandbox sem internet não.'
-pubDatetime: 2026-11-18T11:20:00Z
+pubDatetime: 2026-11-18T10:45:00Z
 author: Vinicius Costa
 tags: [ia, agentes, seguranca, avaliacao]
 ---
